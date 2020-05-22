@@ -18,7 +18,10 @@ for post in posts:
         desc.append(entryVals[2])
 
 
-    
+df = pd.DataFrame(list(zip(title, contacts, desc)), 
+               columns =['Project Title', 'Point of Contact', 'Project Description']) 
+
+df.to_csv('StanfordProjects.csv', index = False)
 
 
 

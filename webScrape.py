@@ -1,6 +1,10 @@
 #Importing packages
 from selenium import webdriver
 import pandas as pd
+import streamlit as st
+import plotly.graph_objects as go
+
+
 
 def stanford():
 
@@ -23,6 +27,7 @@ def stanford():
                 columns =['Project Title', 'Point of Contact', 'Project Description']) 
 
     df.to_csv('StanfordProjects.csv', index = False)
+    return df
     
 #--------------------------------------------------------------
 def virginiaTech():
@@ -59,7 +64,36 @@ def virginiaTech():
                     columns =['Project Title', 'Type of Research', 'Project Description']) 
 
     df.to_csv('VirginiaTechProjects.csv', index = False)
+    return df
 
-stanford()
-virginiaTech()
+stanVal = pd.read_csv('StanfordProjects.csv')
+
+stanTab = go.Figure(data=[go.Table(
+    header=dict(values=list(stanVal.columns),
+                fill_color='red',
+                align='left'),
+    cells=dict(values=[stanVal[k].tolist() for k in stanVal.columns[0:]],
+               fill_color='white',
+               align='left'))
+])
+
+
+vTVal = pd.read_csv('VirginiaTechProjects.csv')
+
+vTTab = go.Figure(data=[go.Table(
+    header=dict(values=list(vTVal.columns),
+                fill_color='maroon',
+                align='left'),
+    cells=dict(values=[vTVal[k].tolist() for k in vTVal.columns[0:]],
+               fill_color='orange',
+               align='left'))
+])
+
+
+
+
+st.title('Covid-19 Research Opportunities')
+oppVals = {'Stanford': stanTab, 'Virginia Tech': vTTab}
+val = st.selectbox("Opportunity Choices", list(oppVals.keys()), 0)
+st.plotly_chart(oppVals[val])
 

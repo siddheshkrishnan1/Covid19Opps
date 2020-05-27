@@ -1,55 +1,1314 @@
-Project Title,Point of Contact,Project Description
-Building COVID-19 testing capacity both locally and nationally,"Benjamin Pinsky, MD, PhD","Pinsky’s team is focused on building COVID-19 testing capacity, both locally and nationally. They are collaborating with other clinical laboratories to ensure these labs can meet the requirements of the Food and Drug Administration for COVID-19 clinical testing. The group is also working with various collaborators to develop and evaluate novel methods for the diagnosis of COVID-19, as well as methods to assess immune protection and to predict the severity of disease."
-Validation of specimen self-collection vs. collection by health care worker for COVID-19 testing,"Yvonne Maldonado, MD; Jonathan Altamirano; Prasanthi Govindarajan, MD, and Andra Blomkalns, MD","Maldonado, Altamirano, Govindarajan and Blomkalns are investigating three swab techniques used during COVID-19 testing: a self-collected nasal swab performed with the aid of an instruction sheet; a health care worker-collected nasal swab; and a health care worker-collected oropharyngeal swab. Should self-collected nasal swabs prove as effective as those collected by health care workers, patients may be able to safely and effectively collect specimens outside of health care settings."
-Lung function in people infected with SARS-CoV-2,"Carlos Milla, MD","Milla and his team are evaluating whether improvements they’ve made in a lung function test can more successfully and safely identify subjects at high risk of severe COVID-19 disease, even when disease is in its early, asymptomatic stage. Standard tests involve inhaling deeply and quickly exhaling as much air as possible. The Milla lab’s improvements allow subjects to simply breathe passively for a few seconds through a mouthpiece. This not only makes the test feasible for sick subjects but also minimizes the generation of aerosols. "
-Machine-learning-based evaluation for COVID-19,"Niaz Banaei, MD","Banaei’s group is using machine learning to develop a web tool that uses non-SARS-CoV-2 test results (such as blood cell counts and other available tests) to rule out COVID-19 infection with high accuracy. The goal is to provide health care workers another, possibly faster, option for screening individuals for COVID-19."
-Development of rapid at-home testing for COVID-19,"William Greenleaf, PhD","Greenleaf is leading an effort to develop new methods of COVID-19 detection at the point of care to help get around current supply chain problems and allow for rapid screening. The kit in development is meant to function directly in sample swabs and, in principle, could be done at home or in decentralized clinics if users were taught proper swabbing techniques."
-Tracking COVID-19 with wearables,"Michael Snyder, PhD;  Sam Yang, MD, FACEP and Megan Mahoney, MD",Snyder and his team will track biological parameters of individuals who are ill with COVID-19 or at risk for the disease using a smart watch. Their goal is to determine whether they can tell if the smart watch user is becoming ill based on measurements such as heart rate.
-Natural history of shedding and household transmission of COVID-19: Constructing patterns of viral spread and evolution,"Yvonne Maldonado, MD","Maldonado’s team will combine genomic and epidemiologic data to address questions about the transmission and evolutionary dynamics of COVID-19. Her team plans to use whole-genome sequencing to understand how COVID-19 mutates during the early stages of infection, as well as generate a bio-repository of specimens and associated clinical and epidemiologic data for use in understanding the transmission of COVID-19. "
-Repurposing snorkel masks for personal protective equipment,"Manu Prakash, PhD, and University of Utah collaborators","Prakash and his lab are repurposing full-face snorkel masks as reusable personal protective equipment for healthcare workers to help combat the shortage of personal protective equipment in hospitals. To ensure protection against airborne pathogens, the group is 3D-printing N95 filter attachments that are fitted to the snorkel masks. The prototypes are currently being tested in the three clinics currently."
-Novel aerosol capture tools for understanding COVID-19 infectiousness,"Jason Andrews, MD, SM","Andrews’ group is developing and validating tools to capture airborne biological particles and characterize infectiousness, with the goals of understanding predictors and determinants of infectiousness and potentially monitoring environments for presence of SARS-CoV-2."
-Clinical trial of remdesivir in hospitalized adults with COVID-19,"Neera Ahuja, MD, and Kari Nadeau, MD, PhD","Nadeau and Ahuja are conducting a randomized, double-blind, placebo-controlled phase 2 trial to evaluate the safety and efficacy of the Ebola drug remdesivir in hospitalized adult patients diagnosed with COVID-19. The study is sponsored by the National Institutes of Health and is a multicenter trial that will be conducted at as many as 50 sites globally."
-Phase 3 clinical trials of remdesivir in patients hospitalized with moderate and severe COVID-19,"Aruna Subramanian, MD, and Philip Grant, MD","Subramanian and Grant have been conducting two multicenter, randomized, phase 3 clinical trials of an anti-viral medication, remdesivir. They are following patients to see how quickly they improve to the point of no longer needing oxygen or hospitalization. These trials, supported by Gilead Sciences, are being conducted at 100 centers worldwide. Stanford Medicine has been enrolling patients since March 14."
-Rapid-response ventilators,"David Camarillo, PhD, and Ryan Van Wert, MD","Camarillo and Van Wert have undertaken a project to design and build simplified, rapidly scalable, single-use ventilators to help address the broad shortage of ventilators nationwide. The team aims to create machines that hospitals can use to save lives when standard ventilators are unavailable. The Chan Zuckerberg Biohub is supporting this work. "
-Clinical trial of novel therapeutic for mild COVID-19 infection to prevent severe disease and reduce viral shedding,"Upinder Singh, MD; Julie Parsonnet, MD; Jason Andrews, MD; Prasanna Jagannathan, MD; and other clinical collaborators","Singh’s team is conducting a trial of a novel therapeutic called Lambda, a broad-spectrum anti-viral compound that’s been given to more than 3,000 patients in clinical trials of hepatitis viruses, for efficacy in outpatients with mild COVID-19. In vitro and animal-model data suggest Lambda may also inhibit replication of respiratory viruses, such as the COVID-19 virus. The team plans to perform a phase 2 randomized controlled trial of Lambda among outpatients with mild COVID-19 to determine whether the drug reduces the duration of symptoms, viral shedding and the risk of hospitalization."
-Defining the therapeutic potential of host-targeted approaches for combating COVID-19,"Shirit Einav, MD","Einav’s lab is researching repurposed and novel anti-viral approaches targeting two cellular kinases that are an Achilles' heel of multiple unrelated RNA viruses. Their data show that a combination of two already-approved anti-cancer drugs that act against these kinases inhibits replication of multiple viruses in vitro and reduces mortality in mice infected with the dengue or Ebola viruses. The lab has also been developing more selective compounds that target these cellular kinases and have potent activity against multiple RNA viruses, including flaviviruses and coronaviruses, both in vitro and in human primary cells."
-Specimen collection during COVID-19 clinical trials and lab biosafety enhancements,"Catherine Blish, MD, PhD; with Aruna Subramanian, MD; Philip Grant, MD; Angela Rogers, MD; and other clinical collaborators","Subramanian and Grant are co-principal investigators of a Gilead-sponsored clinical trial that evaluates the safety and efficacy of using the Ebola drug remdesivir to treat patients with COVID-19. In parallel with these trials, Blish wants to collect specimens, such as blood and stool samples, and later expand collection to individuals outside of the trials. These bio-specimens will be crucial in understanding the biological underpinnings of this virus."
-Develop proofs-of-concept for two novel COVID-19 drugs to begin clinical trials,"Jeffrey Glenn, MD, PhD, and Rhiju Das, PhD","Glenn is preparing two potential COVID-19 drugs for clinical trials: a lipid kinase inhibitor that could be used to combat COVID-19 and other viruses, and a locked nucleic acid, similar to one that he has successfully developed to target every known strain of the flu and that could potentially be used during any flu pandemic. Both of these drugs could treat multiple viruses and strains, have high barriers to resistance, and, in some cases, could be used in nonviral applications."
-Coronavirus antiviral research database,"Robert Shafer, MD","Shafer’s team has created an online database of compounds with proven or potential anti-COVID-19 activity. The compounds include targeted anti-virals, repurposed drugs, investigational agents and other compounds that inhibit virus replication. The data come from published biochemical, cellular, small animal, nonhuman primate and human clinical studies. The goal of the database is to provide a uniform way to report experimental results, enabling comparisons between different compounds and allowing prioritization for further development."
-Using artificial intelligence to predict drugs that may inhibit COVID-19,"Russ Altman, MD, PhD, and other collaborators","Altman and his group have used artificial intelligence to computationally predict six drugs that could inhibit TMPRSS2, a protein that plays a key role in SARS-CoV-2 infections. Altman and his collaborators outside of Stanford Medicine plan to conduct experimental follow-up studies to explore the efficacy of two of the drugs in blocking SARS-CoV-2 from causing infection. While promising, the potential drugs are still part of a preliminary computational analysis and would be dangerous to use clinically at this time."
-Crowdsourcing solutions to better understand molecular structures of COVID-19,"Howard Chang, MD, PhD, and Rhiju Das, PhD","The Chang and Das labs are engaging participants of the online-gaming platform Eterna to understand how the RNA genome of SARS-CoV-2 virus might change during the pandemic. Eterna educates and enables its players to “be the virus,” simulating how it shifts its sequence over time to evade diagnostics, therapeutics and vaccines being developed to fight COVID-19. The project seeks to provide RNA-structure-informed predictions and analyses that are not available through other computational efforts, while engaging and educating millions of citizens worldwide through compelling puzzles."
-Stanford Medicine National Daily Health Survey for Coronavirus ,"Lawrence “Rusty” Hofmann, MD","Hofmann is leading an effort to track COVID-19 symptoms nationally using self-reported data from a daily, digital survey. The goal is to create a novel coronavirus heat map that can be used to target and inform national efforts and public health interventions. The creation of this data set is dependent on participation across Stanford Medicine and our broader communities."
-Genomic surveillance to identify silent transmission clusters of COVID-19,"Jason Andrews, MD, MS",Andrews’ team is developing and testing novel tools that utilize microbial whole-genome sequences to identify chains of transmission between individuals. Andrews proposes to work with local hospitals and the state and county health departments to perform whole-genome sequencing on all COVID-19-positive samples and apply these methods in real-time to characterize transmission chains and help guide public health investigations.
-Stanford Coronavirus Study to understand behavioral and societal impacts,"Eleni Linos, MD, DrPH with Melissa Bondy, PhD ","Linos and her team are developing a website with reliable public health information about COVID-19 and surveys about the social and behavioral impact of the evolving pandemic. They also plan to share survey results to directly inform public health practitioners, health care systems, clinicians and policymakers about the informational, social and health needs of community members in their regions."
-Determining pathogenicity of various variants and strains of COVID-19,"Michael Snyder, PhD and Ben Pinsky, MD, PhD","Snyder and his group plan to track different variants and strains of COVID-19 and quantitatively determine which ones correlate with different phenotypes, such as levels of pathogenicity. His team also plans to study the false negative rate of COVID-19, seeking to better understand how many people receive a false negative test result during early stages of the disease."
-COVID-19 and Stanford WELL for Life study to understand the effects of shelter-in-place on well-being,"Ann Hsing, PhD","Hsing and the Stanford WELL for Life team are investigating the effect of COVID-19 and the shelter-in-place order on well-being. They are surveying existing Stanford WELL for Life participants (about 5,000) with the WELL questionnaire, which measures distress and multiple dimensions of well-being longitudinally at six time points over the next 12 months. This approach will enable the evaluation of the short- and long-term effects of COVID-19 quarantine and social distancing on emotions, social connectedness and physical health."
-Investigation of possible oral-fecal transmission of SARS-CoV-2 in the Bay Area,"Ami Bhatt, MD, PhD; Angela Rogers, MD, Andrew Rezvani, MD; Niaz Banaei, MD; and Ben Pinsky, MD, PhD","The Bhatt group and collaborators are investigating whether SARS-CoV-2 was circulating through oral-fecal cycles in the Bay Area community. The lab plans to screen stool samples collected through a biobank at Stanford for signs of SARS-CoV-2 from December 2019 through December 2020. Depending on sample availability, the team also plans to research whether a patient’s gut microbiome composition affects gastrointestinal symptoms of COVID-19, as well as other details about how the virus sheds."
-Building a Bay Area SARS-CoV-2 information commons,"Nigam Shah, PhD, and Yvonne Maldonado, MD","Shah and Maldonado are hoping to better anticipate the evolution of the COVID-19 pandemic. Existing predictions of the pandemic are uncertain due to many factors, such as a lack of plentiful and optimal data and the fact that models vary depending on the location. The scientists are creating a platform that combines diverse inputs to quantify the effects of the shelter-in-place order. The goal is to create more accurate, higher-resolution models about COVID-19 pandemic parameters."
-Continuous symptom profiling of patients screened for SARS-CoV-2,"Nigam Shah, PhD","Shah’s team is analyzing medical notes describing symptoms of patients screened and tested for SARS-CoV-2 at Stanford Medicine. They want to determine if combinations of symptoms are predictive of SARS-CoV-2 test results to assist screening in low-resource settings. They also hope to use information from the medical notes — such as symptoms, duration of disease, travel history and more — to anticipate which patients will require admission or eventual ICU care."
-Bed- and resource-use projections for Stanford Health Care,"Kevin Schulman, MD, and David Scheinker, PhD",Staudenmayer and Schulman have developed an operational Stanford Health Care model to match projected COVID-19 admissions against hospital resources. Their model can be found here.
-The Stanford-CIDE novel coronavirus simulation model,"Jeremy Goldhaber-Fiebert, PhD, and Jason Andrews, MD","A group of faculty members at Stanford Health Policy, including Joshua Salomon and David Studdert, as well as graduate and medical students, are working with Fernando Alarid-Escudero and his group at the Center for Research and Teaching in Economics, in Mexico, to provide high-quality modeling of the epidemiology of COVID-19. Their work encompasses diverse populations and geographies, including California, Mexico and India. The model incorporates realistic demography and patterns of contacts and disease transmissions, as well as nonpharmaceutical interventions, such as social distancing."
-Utilizing radiological imaging of COVID-19 patients for allocation of hospital resources,"Matthew Lungren, MD, MPH","Lungren and his collaborators are using machine learning to analyze CT scans, X-rays and clinical data of COVID-positive patients to predict the risk of respiratory failure or the need for supportive treatment. Their goal is to help direct the allocation of hospital resources, including decision-making on admission and use of intensive care resources."
-Model for hospital bed and resource use projections,"David Scheinker, PhD","Scheinker’s team has developed two interactive models that are available online to the public. One helps project bed and resource capacity, and the other helps  project the number of hospitalizations countywide."
-Analysis of COVID-19 CT scans and X-rays for classification and prediction of patient outcomes,"Matthew Lungren, MD, MPH","Lungren and his collaborators are using imaging and clinical data to predict the risk of respiratory failure, mortality and length of hospital admission among patients with COVID-19. In addition, they aim to quantify CT scans of COVID 19 patients and auto-generate medical reports and correlate the scans to clinical outcomes, such as infection. "
-Predicting best strategies for scarce resource allocation during COVID-19 pandemic,"Tina Hernandez-Boussard, PhD, and Manisha Desai, PhD","Hernandez-Boussard and Desai will use data that shows the time of hospital admission up to the time of mechanical ventilation to predict patient recovery, details of hospital discharge and survival at 24 hours, 7 days, and later. This model will include important factors for COVID-19 recovery and will be continuously updated in real-time as emerging data become available. In the event of resource scarcity, this effort has the potential to inform optimal resource allocation at Stanford Health care."
-Modeling outcomes of COVID-19 patients,"Tina Hernandez-Boussard, PhD, and Manisha Desai, PhD","Hernandez-Boussard and Desai plan to use data from patients who tested positive for COVID-19 at Stanford Health Care to investigate how disease burden varies significantly in patients infected with the virus. Currently, the association of co-infections, symptomatology, comorbidities and other parameters on patient trajectories is unknown."
-"School closures, health care worker absenteeism, and child care subsidies",Benjamin Huynh and Elizabeth Chin,"School closures help reduce peak hospital bed demand, but they can unintentionally cause health care worker absenteeism for those with children. Huynh and Chin are examining the economic feasibility of child care subsidies, as well as the policy effects of child care interventions on absenteeism at Stanford Health Care."
-COVID-19 patients presenting in impending respiratory failure from ambulatory settings,"Harris Carmichael, MD, and Steven Asch, MD",Carmichael and Asch are investigating the connection between unusual symptoms of COVID-19 and the frequency that those cases become ambulatory patients with severe respiratory failure or impending severe respiratory failure. Their objective is to describe clinical factors that may identify people with COVID-19 predisposed to severe respiratory failure outside the hospital.
-Answering COVID-19 clinical research questions with electronic health record data,"Nigam Shah, PhD; Marcello Chang and Jonathan Lu","Chang and Lu and their collaborators are collecting clinical questions related to COVID-19 that can be addressed through observational electronic health record data. The group is investigating connections between the disease and low levels of lymphocytes, lower cholesterol and abnormal chest X-rays. If you would like to submit a question, please do so here. A list of questions that have been submitted can be found here. Student submissions can be found here. For questions, please contact sm_covid_query@lists.stanford.edu."
-COVID-19 imaging utilization per patient admission,"Matthew Lungren, MD, MPH",Lungren and his team are building a dashboard for real-time visualization of COVID-19 radiological imaging at Stanford Hospital. The tool will aid the hospital’s resource planning by forecasting the impact of incoming patients on bed use and by predicting expected radiological image use. The team will create a web-based dashboard that will be implemented at Stanford Hospital for better radiological resource management.
-Using human organoids to understand COVID-19 infection ,"Calvin Kuo, MD, PhD; Manuel Amieva, MD, PhD; and Catherine Blish, MD, PhD","Kuo, Amieva and Blish are recreating the SARS-CoV-2 infection in three-dimensional human mini-organs, or “organoids.” SARS-CoV-2 is the virus that causes COVID-19. Kuo and Amieva are investigating details behind how the virus infects human lung and intestinal tissues through organoid models, and Blish is studying the response of individual cells infected with SARS-CoV-2."
-Systems biological “multi-omics” analysis of immunity to COVID-19 infection,"Bali Pulendran, PhD",Pulendran is investigating the interaction between the human immune system and the SARS-CoV-2 virus through systems-biological methods. His group will use a “multi-omics” approach to probe the host immune system response to SARS-CoV-2 during asymptomatic and symptomatic phases of infection. Their goal is to determine why some people get more severe symptoms than others and to identify biomarkers that predict disease severity in vulnerable populations. His group will also study the immune mechanisms by which vaccines confer protection against SARS-CoV-2.
-Deep omics profiling to determine the genomic factors at play in disease severity,"Euan Ashley, MB ChB, DPhill; Victoria Parikh, MD; Matthew Wheeler, MD; Carlos Bustamante, PhD; and Manuel Rivas, DPhil","Ashley, Parikh and their team are sequencing genomic information from SARS-CoV-2 and human hosts to better understand the diversity of host responses to the virus. Their work aims to better elucidate genomic details underlying COVID-19 disease severity. To do so, the team will collect de-identified omic and clinical data for 1,000 Stanford patients who tested positive for COVID-19-, including hospitalized patients and patients who were in the intensive care unit."
-Multi-omics assessment of individuals infected with COVID-19,"Michael Snyder, PhD; Sam Yang, MD, FACEP; and Maya Kasowski, PhD","The Snyder group will collect biological samples from individuals ill with COVID-19 and those most at risk for the disease, observing and assessing levels of certain molecules involved in several biological pathways, including metabolism and immune function. The team will use this information to create “omics” profiles to look for potential molecular signatures of COVID-19 infection, as well as signs that an individual might have a strong adverse reaction to the virus."
-Analysis of immune response to coronavirus via genomics,"Ansuman Satpathy, MD, PhD; Scott Boyd, MD, PhD; Benjamin Pinsky, MD, PhD and Howard Chang, MD, PhD","Chang, Pinksy Boyd and Satpathy are collaborating with the company 10x Genomics to study the immune response to the coronavirus through single-cell genomics and clinical assays. The team will track immune responses in about 100 patients with COVID-19, performing in-depth molecular analyses of cells and blood samples."
-Role of antibodies in SARS-CoV-2 infection and COVID-19 disease ,"Taia Wang, MD, PhD","Wang and her group are studying molecules that correlate with immunity against COVID-19. Their studies focus on defining a protective antibody response, and they will investigate whether antibodies have a role in determining the severity of COVID-19. The overarching goal of this work is to guide the development of vaccines and monoclonal antibody therapeutics against SARS-CoV-2."
-Comparative pathology and pathogenesis of COVID-19 infections in humans and animal models,"Garry Nolan, PhD; David McIlwain, PhD; Sizun Jiang, PhD; Brice Gaudilliere, MD, PhD; and other collaborators",Nolan and his team are applying multiplexed technologies to achieve in-depth profiling of immune responses to SARS-CoV-2 in nonclinical and clinical studies. Their goal is to identify immune markers associated with outcomes for COVID-19 and understand the arrangement of immune cells relative to lung tissue cells during infection.
-Inflammatory bowel disease treatment in the time of COVID: Patient perceptions and decision-making ,"Cindy Kin, MD; Elizabeth Shelton; Kreeti Shankar; and Sarah Streett, MD","Kin and Streett are exploring how people with inflammatory bowel diseases, including people with Crohn's disease and ulcerative colitis whose treatment frequently involves chronic immunosuppressive therapies, are affected by the COVID-19 outbreak. The study aims to understand the primary concerns that patients with inflammatory bowel diseases have about their illnesses and treatments as they relate to the COVID-19 epidemic so that physicians and the health care team can effectively engage them in shared decision-making."
-SARS-CoV-2 infection and cardiovascular complications,"Sean Wu, MD;  Patricia Nguyen, MD;  Catherine Blish, MD, PhD, and Jan Carette, PhD",Wu and Nguyen are researching cardiovascular complications of COVID-19. The scientists are addressing the relationship between SARS-CoV-2 infection in heart muscle and vascular cells and the consequences of taking common drugs for high blood pressure. Their research employs muscle and vascular cells derived from human induced pluripotent stem cells to determine how these blood pressure drugs affect the virus’ ability to enter cells. 
-The Apollo study,"Melissa Bondy, PhD; Lorene Nelson, PhD; and Steven Goodman, MD, PhD","Bondy, Nelson and Goodman have launched a national survey that aims to assess how the COVID-19 pandemic is affecting the population physically, socially, emotionally and financially. The team’s survey is hosted by an app, called Apollo, that’s designed to screen patients at drive-through COVID-19 testing sites."
-Caregiver survey COVID-19,"Ranak Trivedi, PhD","Trivedi and her team are conducting an anonymous online survey to better understand the experiences of informal caregivers during the COVID-19 pandemic. Informal caregivers are family members or friends who provide significant help to people with mental or physical health conditions. Trivedi aims to use the results of the survey to guide advocacy efforts in support of informal caregivers. A link to the approximately 20-minute survey, which can be taken from anywhere in the world, is available at https://is.gd/stanfordcaregiverstudy."
-Optimized remote work during the COVID-19 pandemic,"Pablo Paredes, PhD","Paredes and collaborators are creating digital tools to support and maintain productivity levels while managing stress associated with the COVID-19 pandemic, social distancing and long-term telecommuting. The researchers propose a collection of tools, dubbed “Home Sweet Office,” that can support personal productivity by managing procrastination caused by online behaviors, such as overuse of social media, and provide stress-management tactics and emotion-regulation interventions."
-Psychological stress associated with remote work during COVID-19 crisis,"Maheen Adamson, PhD; Angela Phillips, PhD; Srija Seenivasan; and Julian Martinez","Adamson and her lab are studying the global impact of psychological stress during the COVID-19 crisis. They are using an eight- to 10-minute survey to help evaluate individual stress levels caused by factors related to remote work, homeschooling and dependent care."
-Impact of COVID-19 pandemic on sleep and mental health,"Andrea Goldstein-Piekarski, PhD","Goldstein-Piekarski and the Computational Psychiatry and Neuroimaging Sleep Lab (CoPsyN Sleep Lab) are conducting a survey-based study examining the short- and long-term impacts of the COVID-19 pandemic and the shelter-in-place orders on sleep, mood and quality of life. The data collected in this study will also help identify factors that predict the development of chronic sleep problems and other negative mental health outcomes arising from stressful life events. "
-Gastrointestinal manifestations in SARS-CoV-2,"George Cholankeril, MD; Alexander Podboy, MD; and Aijaz Ahmed, MD","Cholankeril, Podboy and Ahmed aim to characterize the gastrointestinal symptoms associated with SARS-CoV-2 infection. Nearly one-third of patients in their study had gastrointestinal symptoms while infected with SARS-CoV-2. The team also saw mild elevations in liver enzymes in some patients, which may correlate with a need for a higher level of care. The group is continuing to investigate if gastrointestinal symptoms and liver enzyme abnormalities at presentation could be associated with increased severity of illness, requiring an escalation of care or higher rate of health care utilization."
-Rates of co-infection between SARS-CoV-2 and other respiratory pathogens,"David Kim, MD, PhD; James Quinn, MD; Benjamin Pinsky, MD, PhD; Nigam Shah, PhD; and Ian Brown, MD","The scientists published a research letter that reports on how often patients infected with the coronavirus in Northern California are co-infected with other respiratory pathogens. Results of their analysis suggest higher rates of co-infection than previously reported, with no significant difference in rates of SARS-CoV-2 infection in patients with and without other pathogens. The study indicates that the presence of a non–SARS-CoV-2 pathogen does not provide reassurance that a patient isn’t also infected with SARS-CoV-2."
+Project Title,Point of Contact,Project Description,Key Words
+Building COVID-19 testing capacity both locally and nationally,"Benjamin Pinsky, MD, PhD","Pinsky’s team is focused on building COVID-19 testing capacity, both locally and nationally. They are collaborating with other clinical laboratories to ensure these labs can meet the requirements of the Food and Drug Administration for COVID-19 clinical testing. The group is also working with various collaborators to develop and evaluate novel methods for the diagnosis of COVID-19, as well as methods to assess immune protection and to predict the severity of disease.","assess immune protection
+19 testing capacity
+evaluate novel methods
+19 clinical testing
+clinical laboratories
+various collaborators
+pinsky ’
+drug administration
+also working
+building covid
+19
+methods
+covid
+well
+team
+severity
+requirements
+predict
+nationally
+meet
+locally
+labs
+group
+food
+focused
+ensure
+disease
+diagnosis
+develop
+collaborating"
+Validation of specimen self-collection vs. collection by health care worker for COVID-19 testing,"Yvonne Maldonado, MD; Jonathan Altamirano; Prasanthi Govindarajan, MD, and Andra Blomkalns, MD","Maldonado, Altamirano, Govindarajan and Blomkalns are investigating three swab techniques used during COVID-19 testing: a self-collected nasal swab performed with the aid of an instruction sheet; a health care worker-collected nasal swab; and a health care worker-collected oropharyngeal swab. Should self-collected nasal swabs prove as effective as those collected by health care workers, patients may be able to safely and effectively collect specimens outside of health care settings.","investigating three swab techniques used
+effectively collect specimens outside
+collected nasal swabs prove
+collected nasal swab performed
+collected nasal swab
+collected oropharyngeal swab
+health care workers
+health care worker
+health care settings
+patients may
+instruction sheet
+19 testing
+collected
+self
+safely
+maldonado
+govindarajan
+effective
+covid
+blomkalns
+altamirano
+aid
+able"
+Lung function in people infected with SARS-CoV-2,"Carlos Milla, MD","Milla and his team are evaluating whether improvements they’ve made in a lung function test can more successfully and safely identify subjects at high risk of severe COVID-19 disease, even when disease is in its early, asymptomatic stage. Standard tests involve inhaling deeply and quickly exhaling as much air as possible. The Milla lab’s improvements allow subjects to simply breathe passively for a few seconds through a mouthpiece. This not only makes the test feasible for sick subjects but also minimizes the generation of aerosols. ","standard tests involve inhaling deeply
+simply breathe passively
+evaluating whether improvements
+safely identify subjects
+improvements allow subjects
+lung function test
+milla lab ’
+sick subjects
+test feasible
+severe covid
+quickly exhaling
+much air
+high risk
+asymptomatic stage
+also minimizes
+19 disease
+’
+milla
+disease
+team
+successfully
+seconds
+possible
+mouthpiece
+makes
+made
+generation
+even
+early
+aerosols"
+Machine-learning-based evaluation for COVID-19,"Niaz Banaei, MD","Banaei’s group is using machine learning to develop a web tool that uses non-SARS-CoV-2 test results (such as blood cell counts and other available tests) to rule out COVID-19 infection with high accuracy. The goal is to provide health care workers another, possibly faster, option for screening individuals for COVID-19.","provide health care workers another
+using machine learning
+blood cell counts
+2 test results
+web tool
+uses non
+screening individuals
+possibly faster
+high accuracy
+banaei ’
+available tests
+19 infection
+19
+sars
+rule
+option
+group
+goal
+develop
+covid
+cov"
+Development of rapid at-home testing for COVID-19,"William Greenleaf, PhD","Greenleaf is leading an effort to develop new methods of COVID-19 detection at the point of care to help get around current supply chain problems and allow for rapid screening. The kit in development is meant to function directly in sample swabs and, in principle, could be done at home or in decentralized clinics if users were taught proper swabbing techniques.","help get around current supply chain problems
+taught proper swabbing techniques
+develop new methods
+sample swabs
+rapid screening
+function directly
+decentralized clinics
+19 detection
+users
+principle
+point
+meant
+leading
+kit
+home
+greenleaf
+effort
+done
+development
+covid
+could
+care
+allow"
+Tracking COVID-19 with wearables,"Michael Snyder, PhD;  Sam Yang, MD, FACEP and Megan Mahoney, MD",Snyder and his team will track biological parameters of individuals who are ill with COVID-19 or at risk for the disease using a smart watch. Their goal is to determine whether they can tell if the smart watch user is becoming ill based on measurements such as heart rate.,"track biological parameters
+smart watch user
+becoming ill based
+smart watch
+heart rate
+disease using
+determine whether
+ill
+tell
+team
+snyder
+risk
+measurements
+individuals
+goal
+covid
+19"
+Natural history of shedding and household transmission of COVID-19: Constructing patterns of viral spread and evolution,"Yvonne Maldonado, MD","Maldonado’s team will combine genomic and epidemiologic data to address questions about the transmission and evolutionary dynamics of COVID-19. Her team plans to use whole-genome sequencing to understand how COVID-19 mutates during the early stages of infection, as well as generate a bio-repository of specimens and associated clinical and epidemiologic data for use in understanding the transmission of COVID-19. ","maldonado ’
+genome sequencing
+evolutionary dynamics
+epidemiologic data
+early stages
+combine genomic
+associated clinical
+address questions
+use whole
+team plans
+19 mutates
+use
+team
+19
+well
+understanding
+understand
+transmission
+specimens
+repository
+infection
+generate
+covid
+bio"
+Repurposing snorkel masks for personal protective equipment,"Manu Prakash, PhD, and University of Utah collaborators","Prakash and his lab are repurposing full-face snorkel masks as reusable personal protective equipment for healthcare workers to help combat the shortage of personal protective equipment in hospitals. To ensure protection against airborne pathogens, the group is 3D-printing N95 filter attachments that are fitted to the snorkel masks. The prototypes are currently being tested in the three clinics currently.","printing n95 filter attachments
+reusable personal protective equipment
+personal protective equipment
+three clinics currently
+face snorkel masks
+snorkel masks
+repurposing full
+help combat
+healthcare workers
+ensure protection
+airborne pathogens
+currently
+tested
+shortage
+prototypes
+prakash
+lab
+hospitals
+group
+fitted
+3d"
+Novel aerosol capture tools for understanding COVID-19 infectiousness,"Jason Andrews, MD, SM","Andrews’ group is developing and validating tools to capture airborne biological particles and characterize infectiousness, with the goals of understanding predictors and determinants of infectiousness and potentially monitoring environments for presence of SARS-CoV-2.","capture airborne biological particles
+potentially monitoring environments
+andrews ’ group
+validating tools
+understanding predictors
+characterize infectiousness
+infectiousness
+sars
+presence
+goals
+developing
+determinants
+cov
+2"
+Clinical trial of remdesivir in hospitalized adults with COVID-19,"Neera Ahuja, MD, and Kari Nadeau, MD, PhD","Nadeau and Ahuja are conducting a randomized, double-blind, placebo-controlled phase 2 trial to evaluate the safety and efficacy of the Ebola drug remdesivir in hospitalized adult patients diagnosed with COVID-19. The study is sponsored by the National Institutes of Health and is a multicenter trial that will be conducted at as many as 50 sites globally.","hospitalized adult patients diagnosed
+controlled phase 2 trial
+ebola drug remdesivir
+50 sites globally
+multicenter trial
+national institutes
+study
+sponsored
+safety
+randomized
+placebo
+nadeau
+many
+health
+evaluate
+efficacy
+double
+covid
+conducting
+conducted
+blind
+ahuja
+19"
+Phase 3 clinical trials of remdesivir in patients hospitalized with moderate and severe COVID-19,"Aruna Subramanian, MD, and Philip Grant, MD","Subramanian and Grant have been conducting two multicenter, randomized, phase 3 clinical trials of an anti-viral medication, remdesivir. They are following patients to see how quickly they improve to the point of no longer needing oxygen or hospitalization. These trials, supported by Gilead Sciences, are being conducted at 100 centers worldwide. Stanford Medicine has been enrolling patients since March 14.","enrolling patients since march 14
+phase 3 clinical trials
+longer needing oxygen
+conducting two multicenter
+100 centers worldwide
+following patients
+viral medication
+stanford medicine
+gilead sciences
+trials
+supported
+subramanian
+see
+remdesivir
+randomized
+quickly
+point
+improve
+hospitalization
+grant
+conducted
+anti"
+Rapid-response ventilators,"David Camarillo, PhD, and Ryan Van Wert, MD","Camarillo and Van Wert have undertaken a project to design and build simplified, rapidly scalable, single-use ventilators to help address the broad shortage of ventilators nationwide. The team aims to create machines that hospitals can use to save lives when standard ventilators are unavailable. The Chan Zuckerberg Biohub is supporting this work. ","chan zuckerberg biohub
+ventilators nationwide
+van wert
+team aims
+standard ventilators
+save lives
+rapidly scalable
+help address
+create machines
+build simplified
+broad shortage
+use ventilators
+use
+work
+undertaken
+unavailable
+supporting
+single
+project
+hospitals
+design
+camarillo"
+Clinical trial of novel therapeutic for mild COVID-19 infection to prevent severe disease and reduce viral shedding,"Upinder Singh, MD; Julie Parsonnet, MD; Jason Andrews, MD; Prasanna Jagannathan, MD; and other clinical collaborators","Singh’s team is conducting a trial of a novel therapeutic called Lambda, a broad-spectrum anti-viral compound that’s been given to more than 3,000 patients in clinical trials of hepatitis viruses, for efficacy in outpatients with mild COVID-19. In vitro and animal-model data suggest Lambda may also inhibit replication of respiratory viruses, such as the COVID-19 virus. The team plans to perform a phase 2 randomized controlled trial of Lambda among outpatients with mild COVID-19 to determine whether the drug reduces the duration of symptoms, viral shedding and the risk of hospitalization.","model data suggest lambda may also inhibit replication
+phase 2 randomized controlled trial
+novel therapeutic called lambda
+lambda among outpatients
+viral shedding
+viral compound
+spectrum anti
+respiratory viruses
+hepatitis viruses
+drug reduces
+determine whether
+clinical trials
+000 patients
+team plans
+singh ’
+mild covid
+19 virus
+trial
+outpatients
+’
+team
+covid
+19
+vitro
+symptoms
+risk
+perform
+hospitalization
+given
+efficacy
+duration
+conducting
+broad
+animal
+3"
+Defining the therapeutic potential of host-targeted approaches for combating COVID-19,"Shirit Einav, MD","Einav’s lab is researching repurposed and novel anti-viral approaches targeting two cellular kinases that are an Achilles' heel of multiple unrelated RNA viruses. Their data show that a combination of two already-approved anti-cancer drugs that act against these kinases inhibits replication of multiple viruses in vitro and reduces mortality in mice infected with the dengue or Ebola viruses. The lab has also been developing more selective compounds that target these cellular kinases and have potent activity against multiple RNA viruses, including flaviviruses and coronaviruses, both in vitro and in human primary cells.","viral approaches targeting two cellular kinases
+multiple unrelated rna viruses
+kinases inhibits replication
+multiple rna viruses
+human primary cells
+cellular kinases
+two already
+multiple viruses
+ebola viruses
+selective compounds
+researching repurposed
+reduces mortality
+potent activity
+novel anti
+mice infected
+including flaviviruses
+einav ’
+data show
+cancer drugs
+approved anti
+vitro
+target
+lab
+heel
+developing
+dengue
+coronaviruses
+combination
+also
+act
+achilles"
+Specimen collection during COVID-19 clinical trials and lab biosafety enhancements,"Catherine Blish, MD, PhD; with Aruna Subramanian, MD; Philip Grant, MD; Angela Rogers, MD; and other clinical collaborators","Subramanian and Grant are co-principal investigators of a Gilead-sponsored clinical trial that evaluates the safety and efficacy of using the Ebola drug remdesivir to treat patients with COVID-19. In parallel with these trials, Blish wants to collect specimens, such as blood and stool samples, and later expand collection to individuals outside of the trials. These bio-specimens will be crucial in understanding the biological underpinnings of this virus.","sponsored clinical trial
+later expand collection
+ebola drug remdesivir
+treat patients
+stool samples
+principal investigators
+individuals outside
+blish wants
+biological underpinnings
+collect specimens
+specimens
+virus
+using
+understanding
+trials
+subramanian
+safety
+parallel
+grant
+gilead
+evaluates
+efficacy
+crucial
+covid
+co
+blood
+bio
+19"
+Develop proofs-of-concept for two novel COVID-19 drugs to begin clinical trials,"Jeffrey Glenn, MD, PhD, and Rhiju Das, PhD","Glenn is preparing two potential COVID-19 drugs for clinical trials: a lipid kinase inhibitor that could be used to combat COVID-19 and other viruses, and a locked nucleic acid, similar to one that he has successfully developed to target every known strain of the flu and that could potentially be used during any flu pandemic. Both of these drugs could treat multiple viruses and strains, have high barriers to resistance, and, in some cases, could be used in nonviral applications.","drugs could treat multiple viruses
+target every known strain
+preparing two potential covid
+locked nucleic acid
+lipid kinase inhibitor
+combat covid
+19 drugs
+could potentially
+successfully developed
+nonviral applications
+high barriers
+clinical trials
+flu pandemic
+viruses
+could
+flu
+19
+used
+strains
+similar
+resistance
+one
+glenn
+cases"
+Coronavirus antiviral research database,"Robert Shafer, MD","Shafer’s team has created an online database of compounds with proven or potential anti-COVID-19 activity. The compounds include targeted anti-virals, repurposed drugs, investigational agents and other compounds that inhibit virus replication. The data come from published biochemical, cellular, small animal, nonhuman primate and human clinical studies. The goal of the database is to provide a uniform way to report experimental results, enabling comparisons between different compounds and allowing prioritization for further development.","compounds include targeted anti
+report experimental results
+inhibit virus replication
+human clinical studies
+potential anti
+different compounds
+uniform way
+small animal
+shafer ’
+repurposed drugs
+published biochemical
+nonhuman primate
+investigational agents
+enabling comparisons
+data come
+allowing prioritization
+19 activity
+online database
+compounds
+database
+virals
+team
+provide
+proven
+goal
+development
+created
+covid
+cellular"
+Using artificial intelligence to predict drugs that may inhibit COVID-19,"Russ Altman, MD, PhD, and other collaborators","Altman and his group have used artificial intelligence to computationally predict six drugs that could inhibit TMPRSS2, a protein that plays a key role in SARS-CoV-2 infections. Altman and his collaborators outside of Stanford Medicine plan to conduct experimental follow-up studies to explore the efficacy of two of the drugs in blocking SARS-CoV-2 from causing infection. While promising, the potential drugs are still part of a preliminary computational analysis and would be dangerous to use clinically at this time.","computationally predict six drugs
+used artificial intelligence
+stanford medicine plan
+preliminary computational analysis
+could inhibit tmprss2
+conduct experimental follow
+potential drugs
+use clinically
+still part
+key role
+collaborators outside
+causing infection
+blocking sars
+2 infections
+drugs
+sars
+2
+would
+two
+time
+studies
+protein
+promising
+plays
+group
+explore
+efficacy
+dangerous
+cov
+altman"
+Crowdsourcing solutions to better understand molecular structures of COVID-19,"Howard Chang, MD, PhD, and Rhiju Das, PhD","The Chang and Das labs are engaging participants of the online-gaming platform Eterna to understand how the RNA genome of SARS-CoV-2 virus might change during the pandemic. Eterna educates and enables its players to “be the virus,” simulating how it shifts its sequence over time to evade diagnostics, therapeutics and vaccines being developed to fight COVID-19. The project seeks to provide RNA-structure-informed predictions and analyses that are not available through other computational efforts, while engaging and educating millions of citizens worldwide through compelling puzzles.","2 virus might change
+virus ,” simulating
+gaming platform eterna
+eterna educates
+rna genome
+provide rna
+project seeks
+informed predictions
+fight covid
+evade diagnostics
+educating millions
+das labs
+computational efforts
+compelling puzzles
+citizens worldwide
+engaging participants
+engaging
+“
+vaccines
+understand
+time
+therapeutics
+structure
+shifts
+sequence
+sars
+players
+pandemic
+online
+enables
+developed
+cov
+chang
+available
+analyses
+19"
+Stanford Medicine National Daily Health Survey for Coronavirus ,"Lawrence “Rusty” Hofmann, MD","Hofmann is leading an effort to track COVID-19 symptoms nationally using self-reported data from a daily, digital survey. The goal is to create a novel coronavirus heat map that can be used to target and inform national efforts and public health interventions. The creation of this data set is dependent on participation across Stanford Medicine and our broader communities.","19 symptoms nationally using self
+participation across stanford medicine
+novel coronavirus heat map
+public health interventions
+inform national efforts
+track covid
+reported data
+digital survey
+data set
+broader communities
+used
+target
+leading
+hofmann
+goal
+effort
+dependent
+daily
+creation
+create"
+Genomic surveillance to identify silent transmission clusters of COVID-19,"Jason Andrews, MD, MS",Andrews’ team is developing and testing novel tools that utilize microbial whole-genome sequences to identify chains of transmission between individuals. Andrews proposes to work with local hospitals and the state and county health departments to perform whole-genome sequencing on all COVID-19-positive samples and apply these methods in real-time to characterize transmission chains and help guide public health investigations.,"help guide public health investigations
+county health departments
+testing novel tools
+utilize microbial whole
+andrews ’ team
+characterize transmission chains
+perform whole
+identify chains
+andrews proposes
+positive samples
+local hospitals
+genome sequencing
+genome sequences
+transmission
+work
+time
+state
+real
+methods
+individuals
+developing
+covid
+apply
+19"
+Stanford Coronavirus Study to understand behavioral and societal impacts,"Eleni Linos, MD, DrPH with Melissa Bondy, PhD ","Linos and her team are developing a website with reliable public health information about COVID-19 and surveys about the social and behavioral impact of the evolving pandemic. They also plan to share survey results to directly inform public health practitioners, health care systems, clinicians and policymakers about the informational, social and health needs of community members in their regions.","directly inform public health practitioners
+reliable public health information
+health care systems
+share survey results
+health needs
+evolving pandemic
+community members
+behavioral impact
+also plan
+website
+team
+surveys
+social
+regions
+policymakers
+linos
+informational
+developing
+covid
+clinicians
+19"
+Determining pathogenicity of various variants and strains of COVID-19,"Michael Snyder, PhD and Ben Pinsky, MD, PhD","Snyder and his group plan to track different variants and strains of COVID-19 and quantitatively determine which ones correlate with different phenotypes, such as levels of pathogenicity. His team also plans to study the false negative rate of COVID-19, seeking to better understand how many people receive a false negative test result during early stages of the disease.","false negative test result
+false negative rate
+team also plans
+many people receive
+track different variants
+different phenotypes
+quantitatively determine
+ones correlate
+group plan
+early stages
+better understand
+study
+strains
+snyder
+seeking
+pathogenicity
+levels
+disease
+covid
+19"
+COVID-19 and Stanford WELL for Life study to understand the effects of shelter-in-place on well-being,"Ann Hsing, PhD","Hsing and the Stanford WELL for Life team are investigating the effect of COVID-19 and the shelter-in-place order on well-being. They are surveying existing Stanford WELL for Life participants (about 5,000) with the WELL questionnaire, which measures distress and multiple dimensions of well-being longitudinally at six time points over the next 12 months. This approach will enable the evaluation of the short- and long-term effects of COVID-19 quarantine and social distancing on emotions, social connectedness and physical health.","surveying existing stanford well
+six time points
+next 12 months
+stanford well
+well questionnaire
+term effects
+social distancing
+social connectedness
+place order
+physical health
+multiple dimensions
+measures distress
+life team
+life participants
+19 quarantine
+well
+19
+short
+shelter
+longitudinally
+long
+investigating
+hsing
+evaluation
+enable
+emotions
+effect
+covid
+approach
+5
+000"
+Investigation of possible oral-fecal transmission of SARS-CoV-2 in the Bay Area,"Ami Bhatt, MD, PhD; Angela Rogers, MD, Andrew Rezvani, MD; Niaz Banaei, MD; and Ben Pinsky, MD, PhD","The Bhatt group and collaborators are investigating whether SARS-CoV-2 was circulating through oral-fecal cycles in the Bay Area community. The lab plans to screen stool samples collected through a biobank at Stanford for signs of SARS-CoV-2 from December 2019 through December 2020. Depending on sample availability, the team also plans to research whether a patient’s gut microbiome composition affects gastrointestinal symptoms of COVID-19, as well as other details about how the virus sheds.","gut microbiome composition affects gastrointestinal symptoms
+screen stool samples collected
+bay area community
+team also plans
+investigating whether sars
+research whether
+lab plans
+virus sheds
+sample availability
+patient ’
+fecal cycles
+december 2020
+december 2019
+bhatt group
+sars
+well
+stanford
+signs
+oral
+details
+depending
+covid
+cov
+collaborators
+circulating
+biobank
+2
+19"
+Building a Bay Area SARS-CoV-2 information commons,"Nigam Shah, PhD, and Yvonne Maldonado, MD","Shah and Maldonado are hoping to better anticipate the evolution of the COVID-19 pandemic. Existing predictions of the pandemic are uncertain due to many factors, such as a lack of plentiful and optimal data and the fact that models vary depending on the location. The scientists are creating a platform that combines diverse inputs to quantify the effects of the shelter-in-place order. The goal is to create more accurate, higher-resolution models about COVID-19 pandemic parameters.","combines diverse inputs
+models vary depending
+19 pandemic parameters
+resolution models
+19 pandemic
+uncertain due
+place order
+optimal data
+many factors
+existing predictions
+better anticipate
+pandemic
+shelter
+shah
+scientists
+quantify
+plentiful
+platform
+maldonado
+location
+lack
+hoping
+higher
+goal
+fact
+evolution
+effects
+creating
+create
+covid
+accurate"
+Continuous symptom profiling of patients screened for SARS-CoV-2,"Nigam Shah, PhD","Shah’s team is analyzing medical notes describing symptoms of patients screened and tested for SARS-CoV-2 at Stanford Medicine. They want to determine if combinations of symptoms are predictive of SARS-CoV-2 test results to assist screening in low-resource settings. They also hope to use information from the medical notes — such as symptoms, duration of disease, travel history and more — to anticipate which patients will require admission or eventual ICU care.","analyzing medical notes describing symptoms
+medical notes —
+eventual icu care
+2 test results
+use information
+travel history
+stanford medicine
+shah ’
+resource settings
+require admission
+assist screening
+also hope
+patients screened
+symptoms
+—
+2
+patients
+want
+tested
+team
+sars
+predictive
+low
+duration
+disease
+determine
+cov
+combinations
+anticipate"
+Bed- and resource-use projections for Stanford Health Care,"Kevin Schulman, MD, and David Scheinker, PhD",Staudenmayer and Schulman have developed an operational Stanford Health Care model to match projected COVID-19 admissions against hospital resources. Their model can be found here.,"operational stanford health care model
+match projected covid
+hospital resources
+19 admissions
+model
+staudenmayer
+schulman
+found
+developed"
+The Stanford-CIDE novel coronavirus simulation model,"Jeremy Goldhaber-Fiebert, PhD, and Jason Andrews, MD","A group of faculty members at Stanford Health Policy, including Joshua Salomon and David Studdert, as well as graduate and medical students, are working with Fernando Alarid-Escudero and his group at the Center for Research and Teaching in Economics, in Mexico, to provide high-quality modeling of the epidemiology of COVID-19. Their work encompasses diverse populations and geographies, including California, Mexico and India. The model incorporates realistic demography and patterns of contacts and disease transmissions, as well as nonpharmaceutical interventions, such as social distancing.","work encompasses diverse populations
+model incorporates realistic demography
+stanford health policy
+including joshua salomon
+including california
+social distancing
+quality modeling
+provide high
+nonpharmaceutical interventions
+medical students
+fernando alarid
+faculty members
+disease transmissions
+david studdert
+working
+well
+teaching
+research
+patterns
+mexico
+india
+group
+graduate
+geographies
+escudero
+epidemiology
+economics
+covid
+contacts
+center
+19"
+Utilizing radiological imaging of COVID-19 patients for allocation of hospital resources,"Matthew Lungren, MD, MPH","Lungren and his collaborators are using machine learning to analyze CT scans, X-rays and clinical data of COVID-positive patients to predict the risk of respiratory failure or the need for supportive treatment. Their goal is to help direct the allocation of hospital resources, including decision-making on admission and use of intensive care resources.","using machine learning
+analyze ct scans
+intensive care resources
+hospital resources
+supportive treatment
+respiratory failure
+positive patients
+including decision
+help direct
+clinical data
+x
+use
+risk
+rays
+predict
+need
+making
+lungren
+goal
+covid
+collaborators
+allocation
+admission"
+Model for hospital bed and resource use projections,"David Scheinker, PhD","Scheinker’s team has developed two interactive models that are available online to the public. One helps project bed and resource capacity, and the other helps  project the number of hospitalizations countywide.","developed two interactive models
+one helps project bed
+helps project
+scheinker ’
+resource capacity
+hospitalizations countywide
+available online
+team
+public
+number"
+Analysis of COVID-19 CT scans and X-rays for classification and prediction of patient outcomes,"Matthew Lungren, MD, MPH","Lungren and his collaborators are using imaging and clinical data to predict the risk of respiratory failure, mortality and length of hospital admission among patients with COVID-19. In addition, they aim to quantify CT scans of COVID 19 patients and auto-generate medical reports and correlate the scans to clinical outcomes, such as infection. ","hospital admission among patients
+generate medical reports
+quantify ct scans
+covid 19 patients
+using imaging
+respiratory failure
+clinical outcomes
+clinical data
+scans
+covid
+19
+risk
+predict
+mortality
+lungren
+length
+infection
+correlate
+collaborators
+auto
+aim
+addition"
+Predicting best strategies for scarce resource allocation during COVID-19 pandemic,"Tina Hernandez-Boussard, PhD, and Manisha Desai, PhD","Hernandez-Boussard and Desai will use data that shows the time of hospital admission up to the time of mechanical ventilation to predict patient recovery, details of hospital discharge and survival at 24 hours, 7 days, and later. This model will include important factors for COVID-19 recovery and will be continuously updated in real-time as emerging data become available. In the event of resource scarcity, this effort has the potential to inform optimal resource allocation at Stanford Health care.","inform optimal resource allocation
+emerging data become available
+stanford health care
+include important factors
+predict patient recovery
+use data
+resource scarcity
+19 recovery
+mechanical ventilation
+hospital discharge
+hospital admission
+continuously updated
+7 days
+24 hours
+time
+survival
+shows
+real
+potential
+model
+later
+hernandez
+event
+effort
+details
+desai
+covid
+boussard"
+Modeling outcomes of COVID-19 patients,"Tina Hernandez-Boussard, PhD, and Manisha Desai, PhD","Hernandez-Boussard and Desai plan to use data from patients who tested positive for COVID-19 at Stanford Health Care to investigate how disease burden varies significantly in patients infected with the virus. Currently, the association of co-infections, symptomatology, comorbidities and other parameters on patient trajectories is unknown.","disease burden varies significantly
+stanford health care
+use data
+tested positive
+patient trajectories
+desai plan
+patients infected
+patients
+virus
+unknown
+symptomatology
+parameters
+investigate
+infections
+hernandez
+currently
+covid
+comorbidities
+co
+boussard
+association
+19"
+"School closures, health care worker absenteeism, and child care subsidies",Benjamin Huynh and Elizabeth Chin,"School closures help reduce peak hospital bed demand, but they can unintentionally cause health care worker absenteeism for those with children. Huynh and Chin are examining the economic feasibility of child care subsidies, as well as the policy effects of child care interventions on absenteeism at Stanford Health Care.","school closures help reduce peak hospital bed demand
+unintentionally cause health care worker absenteeism
+stanford health care
+child care subsidies
+child care interventions
+policy effects
+economic feasibility
+absenteeism
+well
+huynh
+examining
+chin
+children"
+COVID-19 patients presenting in impending respiratory failure from ambulatory settings,"Harris Carmichael, MD, and Steven Asch, MD",Carmichael and Asch are investigating the connection between unusual symptoms of COVID-19 and the frequency that those cases become ambulatory patients with severe respiratory failure or impending severe respiratory failure. Their objective is to describe clinical factors that may identify people with COVID-19 predisposed to severe respiratory failure outside the hospital.,"cases become ambulatory patients
+severe respiratory failure outside
+impending severe respiratory failure
+severe respiratory failure
+may identify people
+describe clinical factors
+unusual symptoms
+19 predisposed
+19
+objective
+investigating
+hospital
+frequency
+covid
+connection
+carmichael
+asch"
+Answering COVID-19 clinical research questions with electronic health record data,"Nigam Shah, PhD; Marcello Chang and Jonathan Lu","Chang and Lu and their collaborators are collecting clinical questions related to COVID-19 that can be addressed through observational electronic health record data. The group is investigating connections between the disease and low levels of lymphocytes, lower cholesterol and abnormal chest X-rays. If you would like to submit a question, please do so here. A list of questions that have been submitted can be found here. Student submissions can be found here. For questions, please contact sm_covid_query@lists.stanford.edu.","observational electronic health record data
+collecting clinical questions related
+abnormal chest x
+please contact sm_covid_query
+would like
+student submissions
+lower cholesterol
+low levels
+investigating connections
+questions
+please
+submitted
+submit
+stanford
+rays
+question
+lymphocytes
+lu
+lists
+list
+group
+found
+edu
+disease
+covid
+collaborators
+chang
+addressed
+19"
+COVID-19 imaging utilization per patient admission,"Matthew Lungren, MD, MPH",Lungren and his team are building a dashboard for real-time visualization of COVID-19 radiological imaging at Stanford Hospital. The tool will aid the hospital’s resource planning by forecasting the impact of incoming patients on bed use and by predicting expected radiological image use. The team will create a web-based dashboard that will be implemented at Stanford Hospital for better radiological resource management.,"predicting expected radiological image use
+better radiological resource management
+19 radiological imaging
+bed use
+resource planning
+time visualization
+stanford hospital
+incoming patients
+hospital ’
+based dashboard
+dashboard
+web
+tool
+team
+real
+lungren
+implemented
+impact
+forecasting
+create
+covid
+building
+aid"
+Using human organoids to understand COVID-19 infection ,"Calvin Kuo, MD, PhD; Manuel Amieva, MD, PhD; and Catherine Blish, MD, PhD","Kuo, Amieva and Blish are recreating the SARS-CoV-2 infection in three-dimensional human mini-organs, or “organoids.” SARS-CoV-2 is the virus that causes COVID-19. Kuo and Amieva are investigating details behind how the virus infects human lung and intestinal tissues through organoid models, and Blish is studying the response of individual cells infected with SARS-CoV-2.","“ organoids .” sars
+virus infects human lung
+dimensional human mini
+investigating details behind
+individual cells infected
+organoid models
+intestinal tissues
+causes covid
+2 infection
+virus
+sars
+2
+three
+studying
+response
+recreating
+organs
+kuo
+cov
+blish
+amieva
+19"
+Systems biological “multi-omics” analysis of immunity to COVID-19 infection,"Bali Pulendran, PhD",Pulendran is investigating the interaction between the human immune system and the SARS-CoV-2 virus through systems-biological methods. His group will use a “multi-omics” approach to probe the host immune system response to SARS-CoV-2 during asymptomatic and symptomatic phases of infection. Their goal is to determine why some people get more severe symptoms than others and to identify biomarkers that predict disease severity in vulnerable populations. His group will also study the immune mechanisms by which vaccines confer protection against SARS-CoV-2.,"host immune system response
+human immune system
+vaccines confer protection
+predict disease severity
+omics ” approach
+immune mechanisms
+“ multi
+vulnerable populations
+symptomatic phases
+severe symptoms
+people get
+identify biomarkers
+biological methods
+also study
+2 virus
+2
+use
+systems
+sars
+pulendran
+probe
+others
+investigating
+interaction
+infection
+group
+goal
+determine
+cov
+asymptomatic"
+Deep omics profiling to determine the genomic factors at play in disease severity,"Euan Ashley, MB ChB, DPhill; Victoria Parikh, MD; Matthew Wheeler, MD; Carlos Bustamante, PhD; and Manuel Rivas, DPhil","Ashley, Parikh and their team are sequencing genomic information from SARS-CoV-2 and human hosts to better understand the diversity of host responses to the virus. Their work aims to better elucidate genomic details underlying COVID-19 disease severity. To do so, the team will collect de-identified omic and clinical data for 1,000 Stanford patients who tested positive for COVID-19-, including hospitalized patients and patients who were in the intensive care unit.","better elucidate genomic details underlying covid
+19 -, including hospitalized patients
+sequencing genomic information
+19 disease severity
+intensive care unit
+000 stanford patients
+better understand
+work aims
+tested positive
+identified omic
+human hosts
+host responses
+collect de
+clinical data
+covid
+patients
+virus
+team
+sars
+parikh
+diversity
+cov
+ashley
+2
+1"
+Multi-omics assessment of individuals infected with COVID-19,"Michael Snyder, PhD; Sam Yang, MD, FACEP; and Maya Kasowski, PhD","The Snyder group will collect biological samples from individuals ill with COVID-19 and those most at risk for the disease, observing and assessing levels of certain molecules involved in several biological pathways, including metabolism and immune function. The team will use this information to create “omics” profiles to look for potential molecular signatures of COVID-19 infection, as well as signs that an individual might have a strong adverse reaction to the virus.","create “ omics ” profiles
+strong adverse reaction
+several biological pathways
+potential molecular signatures
+collect biological samples
+certain molecules involved
+snyder group
+individuals ill
+individual might
+including metabolism
+immune function
+assessing levels
+19 infection
+19
+well
+virus
+use
+team
+signs
+risk
+observing
+look
+information
+disease
+covid"
+Analysis of immune response to coronavirus via genomics,"Ansuman Satpathy, MD, PhD; Scott Boyd, MD, PhD; Benjamin Pinsky, MD, PhD and Howard Chang, MD, PhD","Chang, Pinksy Boyd and Satpathy are collaborating with the company 10x Genomics to study the immune response to the coronavirus through single-cell genomics and clinical assays. The team will track immune responses in about 100 patients with COVID-19, performing in-depth molecular analyses of cells and blood samples.","depth molecular analyses
+track immune responses
+company 10x genomics
+immune response
+cell genomics
+pinksy boyd
+clinical assays
+blood samples
+100 patients
+team
+study
+single
+satpathy
+performing
+covid
+coronavirus
+collaborating
+chang
+cells
+19"
+Role of antibodies in SARS-CoV-2 infection and COVID-19 disease ,"Taia Wang, MD, PhD","Wang and her group are studying molecules that correlate with immunity against COVID-19. Their studies focus on defining a protective antibody response, and they will investigate whether antibodies have a role in determining the severity of COVID-19. The overarching goal of this work is to guide the development of vaccines and monoclonal antibody therapeutics against SARS-CoV-2.","protective antibody response
+monoclonal antibody therapeutics
+investigate whether antibodies
+studying molecules
+studies focus
+overarching goal
+work
+wang
+vaccines
+severity
+sars
+role
+immunity
+guide
+group
+development
+determining
+defining
+covid
+cov
+correlate
+2
+19"
+Comparative pathology and pathogenesis of COVID-19 infections in humans and animal models,"Garry Nolan, PhD; David McIlwain, PhD; Sizun Jiang, PhD; Brice Gaudilliere, MD, PhD; and other collaborators",Nolan and his team are applying multiplexed technologies to achieve in-depth profiling of immune responses to SARS-CoV-2 in nonclinical and clinical studies. Their goal is to identify immune markers associated with outcomes for COVID-19 and understand the arrangement of immune cells relative to lung tissue cells during infection.,"identify immune markers associated
+lung tissue cells
+immune cells relative
+applying multiplexed technologies
+immune responses
+depth profiling
+clinical studies
+understand
+team
+sars
+outcomes
+nonclinical
+nolan
+infection
+goal
+covid
+cov
+arrangement
+achieve
+2
+19"
+Inflammatory bowel disease treatment in the time of COVID: Patient perceptions and decision-making ,"Cindy Kin, MD; Elizabeth Shelton; Kreeti Shankar; and Sarah Streett, MD","Kin and Streett are exploring how people with inflammatory bowel diseases, including people with Crohn's disease and ulcerative colitis whose treatment frequently involves chronic immunosuppressive therapies, are affected by the COVID-19 outbreak. The study aims to understand the primary concerns that patients with inflammatory bowel diseases have about their illnesses and treatments as they relate to the COVID-19 epidemic so that physicians and the health care team can effectively engage them in shared decision-making.","ulcerative colitis whose treatment frequently involves chronic immunosuppressive therapies
+inflammatory bowel diseases
+health care team
+study aims
+shared decision
+primary concerns
+effectively engage
+19 outbreak
+19 epidemic
+including people
+people
+understand
+treatments
+streett
+relate
+physicians
+patients
+making
+kin
+illnesses
+exploring
+disease
+crohn
+covid
+affected"
+SARS-CoV-2 infection and cardiovascular complications,"Sean Wu, MD;  Patricia Nguyen, MD;  Catherine Blish, MD, PhD, and Jan Carette, PhD",Wu and Nguyen are researching cardiovascular complications of COVID-19. The scientists are addressing the relationship between SARS-CoV-2 infection in heart muscle and vascular cells and the consequences of taking common drugs for high blood pressure. Their research employs muscle and vascular cells derived from human induced pluripotent stem cells to determine how these blood pressure drugs affect the virus’ ability to enter cells. ,"human induced pluripotent stem cells
+blood pressure drugs affect
+high blood pressure
+taking common drugs
+virus ’ ability
+researching cardiovascular complications
+vascular cells derived
+research employs muscle
+vascular cells
+enter cells
+heart muscle
+2 infection
+wu
+scientists
+sars
+relationship
+nguyen
+determine
+covid
+cov
+consequences
+addressing
+19"
+The Apollo study,"Melissa Bondy, PhD; Lorene Nelson, PhD; and Steven Goodman, MD, PhD","Bondy, Nelson and Goodman have launched a national survey that aims to assess how the COVID-19 pandemic is affecting the population physically, socially, emotionally and financially. The team’s survey is hosted by an app, called Apollo, that’s designed to screen patients at drive-through COVID-19 testing sites.","19 testing sites
+19 pandemic
+screen patients
+population physically
+called apollo
+team ’
+national survey
+’
+survey
+socially
+nelson
+launched
+hosted
+goodman
+financially
+emotionally
+drive
+designed
+covid
+bondy
+assess
+app
+aims
+affecting"
+Caregiver survey COVID-19,"Ranak Trivedi, PhD","Trivedi and her team are conducting an anonymous online survey to better understand the experiences of informal caregivers during the COVID-19 pandemic. Informal caregivers are family members or friends who provide significant help to people with mental or physical health conditions. Trivedi aims to use the results of the survey to guide advocacy efforts in support of informal caregivers. A link to the approximately 20-minute survey, which can be taken from anywhere in the world, is available at https://is.gd/stanfordcaregiverstudy.","provide significant help
+physical health conditions
+guide advocacy efforts
+anonymous online survey
+minute survey
+informal caregivers
+https ://
+family members
+better understand
+approximately 20
+19 pandemic
+trivedi aims
+survey
+trivedi
+world
+use
+team
+taken
+support
+stanfordcaregiverstudy
+results
+people
+mental
+link
+gd
+friends
+experiences
+covid
+conducting
+available
+anywhere"
+Optimized remote work during the COVID-19 pandemic,"Pablo Paredes, PhD","Paredes and collaborators are creating digital tools to support and maintain productivity levels while managing stress associated with the COVID-19 pandemic, social distancing and long-term telecommuting. The researchers propose a collection of tools, dubbed “Home Sweet Office,” that can support personal productivity by managing procrastination caused by online behaviors, such as overuse of social media, and provide stress-management tactics and emotion-regulation interventions.","dubbed “ home sweet office ,”
+managing procrastination caused
+maintain productivity levels
+managing stress associated
+support personal productivity
+creating digital tools
+provide stress
+term telecommuting
+social media
+social distancing
+researchers propose
+regulation interventions
+online behaviors
+management tactics
+19 pandemic
+tools
+support
+paredes
+overuse
+long
+emotion
+covid
+collection
+collaborators"
+Psychological stress associated with remote work during COVID-19 crisis,"Maheen Adamson, PhD; Angela Phillips, PhD; Srija Seenivasan; and Julian Martinez","Adamson and her lab are studying the global impact of psychological stress during the COVID-19 crisis. They are using an eight- to 10-minute survey to help evaluate individual stress levels caused by factors related to remote work, homeschooling and dependent care.","help evaluate individual stress levels caused
+psychological stress
+remote work
+minute survey
+global impact
+factors related
+dependent care
+19 crisis
+using
+studying
+lab
+homeschooling
+eight
+covid
+adamson
+10"
+Impact of COVID-19 pandemic on sleep and mental health,"Andrea Goldstein-Piekarski, PhD","Goldstein-Piekarski and the Computational Psychiatry and Neuroimaging Sleep Lab (CoPsyN Sleep Lab) are conducting a survey-based study examining the short- and long-term impacts of the COVID-19 pandemic and the shelter-in-place orders on sleep, mood and quality of life. The data collected in this study will also help identify factors that predict the development of chronic sleep problems and other negative mental health outcomes arising from stressful life events. ","negative mental health outcomes arising
+also help identify factors
+neuroimaging sleep lab
+copsyn sleep lab
+chronic sleep problems
+stressful life events
+based study examining
+term impacts
+place orders
+data collected
+computational psychiatry
+19 pandemic
+sleep
+study
+life
+survey
+short
+shelter
+quality
+predict
+piekarski
+mood
+long
+goldstein
+development
+covid
+conducting"
+Gastrointestinal manifestations in SARS-CoV-2,"George Cholankeril, MD; Alexander Podboy, MD; and Aijaz Ahmed, MD","Cholankeril, Podboy and Ahmed aim to characterize the gastrointestinal symptoms associated with SARS-CoV-2 infection. Nearly one-third of patients in their study had gastrointestinal symptoms while infected with SARS-CoV-2. The team also saw mild elevations in liver enzymes in some patients, which may correlate with a need for a higher level of care. The group is continuing to investigate if gastrointestinal symptoms and liver enzyme abnormalities at presentation could be associated with increased severity of illness, requiring an escalation of care or higher rate of health care utilization.","team also saw mild elevations
+liver enzyme abnormalities
+health care utilization
+gastrointestinal symptoms associated
+gastrointestinal symptoms
+liver enzymes
+presentation could
+nearly one
+may correlate
+increased severity
+higher rate
+higher level
+ahmed aim
+2 infection
+care
+associated
+2
+third
+study
+sars
+requiring
+podboy
+patients
+need
+investigate
+infected
+illness
+group
+escalation
+cov
+continuing
+cholankeril
+characterize"
+Rates of co-infection between SARS-CoV-2 and other respiratory pathogens,"David Kim, MD, PhD; James Quinn, MD; Benjamin Pinsky, MD, PhD; Nigam Shah, PhD; and Ian Brown, MD","The scientists published a research letter that reports on how often patients infected with the coronavirus in Northern California are co-infected with other respiratory pathogens. Results of their analysis suggest higher rates of co-infection than previously reported, with no significant difference in rates of SARS-CoV-2 infection in patients with and without other pathogens. The study indicates that the presence of a non–SARS-CoV-2 pathogen does not provide reassurance that a patient isn’t also infected with SARS-CoV-2.","analysis suggest higher rates
+non – sars
+often patients infected
+study indicates
+significant difference
+scientists published
+research letter
+provide reassurance
+previously reported
+northern california
+also infected
+2 pathogen
+respiratory pathogens
+2 infection
+rates
+sars
+patients
+infected
+2
+pathogens
+infection
+’
+without
+results
+reports
+presence
+patient
+cov
+coronavirus
+co"

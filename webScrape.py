@@ -4,8 +4,15 @@ import pandas as pd
 import streamlit as st
 import plotly.graph_objects as go
 from rake_nltk import Rake
+import stringdist
+
 
 r = Rake()
+
+
+drivers = {"Technology/Computer Science": ["technical", "AWS", "software", "development", "cyber", "python", "parameter", "computer", "model", "predictive", "data", "machine", "artificial intelligence", "map"], 
+           "Biomedical": ["biology", "ventilator", "lung", "FDA", "hospital", "medicine","tissue", "nasal", "oropharyngeal", "specimen", "oxygen", "placebo", "virus", "antibiotic", "infection", "chronic", "health", "drug", "swab", "blood", "heart", "genome", "clinical"]}
+           #"Social Services": ["state", "lockdown", "environment", "community", "social", "low income", "distancing", "pandemic"]}
 
 def stanford():
 
@@ -24,7 +31,7 @@ def stanford():
             contacts.append(entryVals[1])
             desc.append(entryVals[2])
             r.extract_keywords_from_text(entryVals[2])
-            keyWords.append("\n".join(r.get_ranked_phrases()))
+            keyWords.append(getKeyWord(r.get_ranked_phrases()))
 
 
 
@@ -37,6 +44,45 @@ def stanford():
     return df
     
 #--------------------------------------------------------------
+
+
+def longeststring(lst):
+    longest = ""
+    for x in lst:
+        if isinstance(x, str) and len(x) > len(longest):
+            longest = x
+    return len(longest)
+
+
+def getKeyWord(rankedPhrases):
+    min_dist_ratio = 1
+    driv = ""
+    for driver in drivers: 
+        indic = drivers.get(driver)
+        div =  0
+        total_ratio = 0
+        for key_val in indic:
+            for key_words in rankedPhrases:
+                
+                #This gets the levenshtein distance between each word if the row data is not 'None'
+                if key_words is not None:
+                    dist = stringdist.levenshtein(key_val.lower(), key_words.lower())
+                    curr_dist_ratio = (dist/longeststring([key_val, key_words]))
+                    total_ratio += curr_dist_ratio
+                    div = div+1
+        
+        total_ratio = total_ratio/div
+        if total_ratio <min_dist_ratio:
+            min_dist_ratio = total_ratio
+            driv = driver
+    
+    if min_dist_ratio <0.87:
+        driv = "Other"
+    return driv    
+
+
+#--------------------------------------------------------------------------------------
+
 def virginiaTech():
     driver = webdriver.Chrome('/Users/siddh1/Documents/Covid19Program/chromedriver')
     driver.get("https://www.research.vt.edu/covid-19-updates-impacts/opportunities.html")
@@ -57,7 +103,7 @@ def virginiaTech():
         typeOfResearch.append(entryVals[4])
         desc.append(descs[index].text)
         r.extract_keywords_from_text(descs[index].text)
-        keyWords.append("\n".join(r.get_ranked_phrases()))
+        keyWords.append(getKeyWord(r.get_ranked_phrases()))
         index+=2
 
     index = 1
@@ -67,7 +113,7 @@ def virginiaTech():
         typeOfResearch.append(entryVals[4])
         desc.append(descs[index].text)
         r.extract_keywords_from_text(descs[index].text)
-        keyWords.append("\n".join(r.get_ranked_phrases()))
+        keyWords.append(getKeyWord(r.get_ranked_phrases()))
         index+=2
 
 
@@ -78,6 +124,9 @@ def virginiaTech():
 
     df.to_csv('VirginiaTechProjects.csv', index = False)
     return df
+
+stanford()
+virginiaTech()
 
 stanVal = pd.read_csv('StanfordProjects.csv')
 

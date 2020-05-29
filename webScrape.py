@@ -154,68 +154,28 @@ def turnCatstoFiles():
         df.to_csv(fileName, index = False)
 
 
+def getTable(path, colorA, colorB):
+    dataFrame = pd.read_csv(path)
+
+    result = go.Figure(data=[go.Table(
+        header=dict(values=list(dataFrame.columns),
+                    fill_color=colorA,
+                    align='left'),
+        cells=dict(values=[dataFrame[k].tolist() for k in dataFrame.columns[0:]],
+                fill_color=colorB,
+                align='left'))
+    ])
+
+    return result
    
 
-stanVal = pd.read_csv('StanfordProjects.csv')
-
-stanTab = go.Figure(data=[go.Table(
-    header=dict(values=list(stanVal.columns),
-                fill_color='red',
-                align='left'),
-    cells=dict(values=[stanVal[k].tolist() for k in stanVal.columns[0:]],
-               fill_color='white',
-               align='left'))
-])
+stanTab = getTable('StanfordProjects.csv', 'red', 'white')
+vTab = getTable('VirginiaTechProjects.csv', 'maroon', 'orange')
+techTab = getTable('Technology and Computer Science.csv', 'green', 'white')
+bioTab = getTable('Biomedical.csv', 'pink', 'white')
+otherTab = getTable('Other.csv', 'grey', 'white')
 
 
-vTVal = pd.read_csv('VirginiaTechProjects.csv')
-
-vTTab = go.Figure(data=[go.Table(
-    header=dict(values=list(vTVal.columns),
-                fill_color='maroon',
-                align='left'),
-    cells=dict(values=[vTVal[k].tolist() for k in vTVal.columns[0:]],
-               fill_color='orange',
-               align='left'))
-])
-
-
-techVal = pd.read_csv('Technology and Computer Science.csv')
-
-techTab = go.Figure(data=[go.Table(
-    header=dict(values=list(techVal.columns),
-                fill_color='green',
-                align='left'),
-    cells=dict(values=[techVal[k].tolist() for k in techVal.columns[0:]],
-               fill_color='white',
-               align='left'))
-])
-
-
-
-bioVal = pd.read_csv('Biomedical.csv')
-
-bioTab = go.Figure(data=[go.Table(
-    header=dict(values=list(bioVal.columns),
-                fill_color='pink',
-                align='left'),
-    cells=dict(values=[bioVal[k].tolist() for k in bioVal.columns[0:]],
-               fill_color='white',
-               align='left'))
-])
-
-
-
-otherVal = pd.read_csv('Other.csv')
-
-otherTab = go.Figure(data=[go.Table(
-    header=dict(values=list(otherVal.columns),
-                fill_color='grey',
-                align='left'),
-    cells=dict(values=[otherVal[k].tolist() for k in otherVal.columns[0:]],
-               fill_color='white',
-               align='left'))
-])
 
 
 

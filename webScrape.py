@@ -3,6 +3,8 @@ from selenium import webdriver
 import pandas as pd
 from rake_nltk import Rake
 import stringdist
+from pymongo import MongoClient
+
 
 
 r = Rake()
@@ -52,6 +54,15 @@ def stanford():
                 columns =['Project Title', 'Point of Contact', 'Project Description', 'Key Words']) 
 
     df.to_csv('StanfordProjects.csv', index = False)
+
+
+    client =  MongoClient("mongodb+srv://covid19Scraper:Covid-19@coviddata-ouz9f.mongodb.net/test?retryWrites=true&w=majority")
+    db = client['Covid19Data']
+    collection = db['Stanford']
+    df.reset_index(inplace=True)
+    data_dict = df.to_dict("records")
+    # Insert collection
+    collection.insert_many(data_dict)
     return df
     
 #--------------------------------------------------------------
@@ -141,6 +152,14 @@ def virginiaTech():
                     columns =['Project Title', 'Type of Research', 'Project Description', 'Key Words']) 
 
     df.to_csv('VirginiaTechProjects.csv', index = False)
+
+    client =  MongoClient("mongodb+srv://covid19Scraper:Covid-19@coviddata-ouz9f.mongodb.net/test?retryWrites=true&w=majority")
+    db = client['Covid19Data']
+    collection = db['VTech']
+    df.reset_index(inplace=True)
+    data_dict = df.to_dict("records")
+    # Insert collection
+    collection.insert_many(data_dict)
     return df
 
 def turnCatstoFiles():
@@ -150,9 +169,18 @@ def turnCatstoFiles():
                     columns =['Project Title', 'Source', 'Project Description']) 
         df.to_csv(fileName, index = False)
 
+        client =  MongoClient("mongodb+srv://covid19Scraper:Covid-19@coviddata-ouz9f.mongodb.net/test?retryWrites=true&w=majority")
+        db = client['Covid19Data']
+        collection = db[str(keys)]
+        df.reset_index(inplace=True)
+        data_dict = df.to_dict("records")
+        # Insert collection
+        collection.insert_many(data_dict)
+
 
 
    
-
-
+stanford()
+virginiaTech()
+turnCatstoFiles()
 

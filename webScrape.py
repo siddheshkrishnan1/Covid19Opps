@@ -58,7 +58,7 @@ def stanford():
 
     client =  MongoClient("mongodb+srv://covid19Scraper:Covid-19@coviddata-ouz9f.mongodb.net/test?retryWrites=true&w=majority")
     db = client['Covid19Data']
-    collection = db['Stanford']
+    collection = db['StanfordProjects']
     df.reset_index(inplace=True)
     data_dict = df.to_dict("records")
     # Insert collection
@@ -155,7 +155,7 @@ def virginiaTech():
 
     client =  MongoClient("mongodb+srv://covid19Scraper:Covid-19@coviddata-ouz9f.mongodb.net/test?retryWrites=true&w=majority")
     db = client['Covid19Data']
-    collection = db['VTech']
+    collection = db['VirginiaTechProjects']
     df.reset_index(inplace=True)
     data_dict = df.to_dict("records")
     # Insert collection

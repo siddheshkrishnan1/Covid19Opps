@@ -1,9 +1,16 @@
 import streamlit as st
 import plotly.graph_objects as go
 import pandas as pd
+from pymongo import MongoClient
+
 
 def getTable(path, colorA, colorB):
-    dataFrame = pd.read_csv(path)
+    client =  MongoClient("mongodb+srv://covid19Scraper:Covid-19@coviddata-ouz9f.mongodb.net/test?retryWrites=true&w=majority")
+    db = client.Covid19Data
+    collection = db[path]
+    dataFrame = pd.DataFrame(list(collection.find()))
+    del dataFrame['_id']
+    del dataFrame['index']
 
     result = go.Figure(data=[go.Table(
         header=dict(values=list(dataFrame.columns),
@@ -17,11 +24,12 @@ def getTable(path, colorA, colorB):
     return result
 
 
-stanTab = getTable('StanfordProjects.csv', 'red', 'white')
-vTTab = getTable('VirginiaTechProjects.csv', 'maroon', 'orange')
-techTab = getTable('Technology and Computer Science.csv', 'green', 'white')
-bioTab = getTable('Biomedical.csv', 'pink', 'white')
-otherTab = getTable('Other.csv', 'grey', 'white')
+stanTab = getTable('StanfordProjects', 'red', 'white')
+vTTab = getTable('VirginiaTechProjects', 'maroon', 'orange')
+techTab = getTable('Technology and Computer Science', 'green', 'white')
+bioTab = getTable('Biomedical', 'pink', 'white')
+otherTab = getTable('Other', 'grey', 'white')
+
 
 
 st.title('Covid-19 Research Opportunities')

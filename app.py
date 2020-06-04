@@ -3,8 +3,10 @@ import plotly.graph_objects as go
 import pandas as pd
 from pymongo import MongoClient
 
+numEntries = []
+pairings = ["Technology Projects: ", "Biomedical Projects", "Other Projects"]
 
-def getTable(path, colorA, colorB):
+def getTable(path, colorA, colorB, addProgress):
     client =  MongoClient("mongodb+srv://covid19Scraper:Covid-19@coviddata-ouz9f.mongodb.net/test?retryWrites=true&w=majority")
     db = client.Covid19Data
     collection = db[path]
@@ -20,19 +22,33 @@ def getTable(path, colorA, colorB):
                 fill_color=colorB,
                 align='left'))
     ])
+    
+    if addProgress is True:
+        numEntries.append(dataFrame.shape[0])
 
     return result
 
 
-stanTab = getTable('StanfordProjects', 'red', 'white')
-vTTab = getTable('VirginiaTechProjects', 'maroon', 'orange')
-techTab = getTable('Technology and Computer Science', 'green', 'white')
-bioTab = getTable('Biomedical', 'pink', 'white')
-otherTab = getTable('Other', 'grey', 'white')
+def normalizeVals():
+    maxVal = max(numEntries)
+    for i in range (len(numEntries)):
+        numEntries[i] = (numEntries[i]/maxVal)
+    
 
+stanTab = getTable('StanfordProjects', 'red', 'white', False)
+vTTab = getTable('VirginiaTechProjects', 'maroon', 'orange', False)
+techTab = getTable('Technology and Computer Science', 'green', 'white', True)
+bioTab = getTable('Biomedical', 'pink', 'white', True)
+otherTab = getTable('Other', 'grey', 'white', True)
+normalizeVals()
 
 
 st.title('Covid-19 Research Opportunities')
+
 oppVals = {'Stanford': stanTab, 'Virginia Tech': vTTab, "Technology": techTab, "Biomedical": bioTab, "Other": otherTab}
 val = st.selectbox("Opportunity Choices", list(oppVals.keys()), 0)
 st.plotly_chart(oppVals[val])
+
+for i in range (len(numEntries)):
+    st.write(pairings[i]) 
+    st.progress(numEntries[i])

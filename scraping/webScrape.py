@@ -40,7 +40,6 @@ def stanford():
 
     for post in posts:
         entryVals = post.text.split("\n")
-        print(len(entryVals))
         if(len(entryVals) == 3):
             title.append(entryVals[0])
             contacts.append(entryVals[1])
@@ -131,7 +130,11 @@ def virginiaTech():
     keyWords = []
 
     postsEven = driver.find_elements_by_class_name("rowTop.rowEven")
+    linkValsEven = driver.find_elements_by_class_name("rowTop.rowEven [href]")
+
+
     postsOdd = driver.find_elements_by_class_name("rowTop.rowOdd")
+    linkValsOdd = driver.find_elements_by_class_name("rowTop.rowOdd [href]")
     descs = driver.find_elements_by_class_name("vt-c-table-noPostProcess")[1:]
     index = 0
 
@@ -146,9 +149,14 @@ def virginiaTech():
         catTables[keyPhrase][0].append(entryVals[2])
         catTables[keyPhrase][1].append("Virginia Tech")
         catTables[keyPhrase][3].append(descs[index].text)
-        links.append("a")
-        catTables[keyPhrase][2].append("a")
+        
         index+=2
+
+    for linksVals in linkValsEven:
+        indivLink = str(linksVals.get_attribute('href'))
+        links.append(indivLink)
+        catTables[keyPhrase][2].append(indivLink)
+
 
     index = 1
     for i in postsOdd:
@@ -162,9 +170,13 @@ def virginiaTech():
         catTables[keyPhrase][0].append(entryVals[2])
         catTables[keyPhrase][1].append("Virginia Tech")
         catTables[keyPhrase][3].append(descs[index].text)
-        links.append("a")
-        catTables[keyPhrase][2].append("a")
+  
         index+=2
+
+    for linksVals in linkValsOdd:
+        indivLink = str(linksVals.get_attribute('href'))
+        links.append(indivLink)
+        catTables[keyPhrase][2].append(indivLink)
 
 
     driver.close()

@@ -19,7 +19,7 @@ catTables = {'Technology and Computer Science': [],
               'Other': []}
 
 for keys in catTables:
-    for i in range(0, 3):
+    for i in range(0, 4):
         catTables[keys].append([])
 
 def stanford():
@@ -31,9 +31,16 @@ def stanford():
     contacts = []
     desc = []
     keyWords = []
+    links = []
     posts = driver.find_elements_by_class_name("text.parbase.section")
+    linkVals = driver.find_elements_by_class_name("text.parbase.section [href]")
+ 
+   
+    
+
     for post in posts:
         entryVals = post.text.split("\n")
+        print(len(entryVals))
         if(len(entryVals) == 3):
             title.append(entryVals[0])
             contacts.append(entryVals[1])
@@ -43,15 +50,24 @@ def stanford():
             keyWords.append(keyPhrase)
             catTables[keyPhrase][0].append(entryVals[0])
             catTables[keyPhrase][1].append("Stanford")
-            catTables[keyPhrase][2].append(entryVals[2])
+            catTables[keyPhrase][3].append(entryVals[2])
+            
+            linkTxt = ""
+            for relLinks in linkVals:
+                textVal = relLinks.text
+                if textVal in entryVals[1]:
+                    linkTxt = linkTxt + str(relLinks.get_attribute('href')) + "\n"
+                
+            links.append(linkTxt)
+            catTables[keyPhrase][2].append(linkTxt)
 
-
+            
 
 
     driver.close()
 
-    df = pd.DataFrame(list(zip(title, contacts, desc, keyWords)), 
-                columns =['Project Title', 'Point of Contact', 'Project Description', 'Key Words']) 
+    df = pd.DataFrame(list(zip(title, contacts, desc, links, keyWords)), 
+                columns =['Project Title', 'Point of Contact', 'Project Description', 'Relevant Links', 'Key Words']) 
 
     df.to_csv('StanfordProjects.csv', index = False)
 
@@ -111,6 +127,7 @@ def virginiaTech():
     title = []
     typeOfResearch = []
     desc = []
+    links = []
     keyWords = []
 
     postsEven = driver.find_elements_by_class_name("rowTop.rowEven")
@@ -128,7 +145,9 @@ def virginiaTech():
         keyWords.append(keyPhrase)
         catTables[keyPhrase][0].append(entryVals[2])
         catTables[keyPhrase][1].append("Virginia Tech")
-        catTables[keyPhrase][2].append(descs[index].text)
+        catTables[keyPhrase][3].append(descs[index].text)
+        links.append("a")
+        catTables[keyPhrase][2].append("a")
         index+=2
 
     index = 1
@@ -142,14 +161,16 @@ def virginiaTech():
         keyWords.append(keyPhrase)
         catTables[keyPhrase][0].append(entryVals[2])
         catTables[keyPhrase][1].append("Virginia Tech")
-        catTables[keyPhrase][2].append(descs[index].text)
+        catTables[keyPhrase][3].append(descs[index].text)
+        links.append("a")
+        catTables[keyPhrase][2].append("a")
         index+=2
 
 
     driver.close()
 
-    df = pd.DataFrame(list(zip(title, typeOfResearch, desc, keyWords)), 
-                    columns =['Project Title', 'Type of Research', 'Project Description', 'Key Words']) 
+    df = pd.DataFrame(list(zip(title, typeOfResearch, desc, links, keyWords)), 
+                    columns =['Project Title', 'Type of Research', 'Project Description', 'Relevant Links', 'Key Words']) 
 
     df.to_csv('VirginiaTechProjects.csv', index = False)
 
@@ -165,8 +186,8 @@ def virginiaTech():
 def turnCatstoFiles():
     for keys in catTables:
         fileName = str(keys)+".csv"
-        df = pd.DataFrame(list(zip(catTables[keys][0], catTables[keys][1], catTables[keys][2])), 
-                    columns =['Project Title', 'Source', 'Project Description']) 
+        df = pd.DataFrame(list(zip(catTables[keys][0], catTables[keys][1], catTables[keys][2], catTables[keys][3])), 
+                    columns =['Project Title', 'Source', 'Relevant Links', 'Project Description']) 
         df.to_csv(fileName, index = False)
 
         client =  MongoClient("mongodb+srv://covid19Scraper:Covid-19@coviddata-ouz9f.mongodb.net/test?retryWrites=true&w=majority")

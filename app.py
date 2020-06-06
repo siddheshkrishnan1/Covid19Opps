@@ -3,10 +3,10 @@ import plotly.graph_objects as go
 import pandas as pd
 from pymongo import MongoClient
 
-numEntries = []
+
 pairings = ["Technology Projects: ", "Biomedical Projects", "Other Projects"]
 
-def getTable(path, colorA, colorB, addProgress):
+def getTable(path, colorA, colorB):
     client =  MongoClient("mongodb+srv://covid19Scraper:Covid-19@coviddata-ouz9f.mongodb.net/test?retryWrites=true&w=majority")
     db = client.Covid19Data
     collection = db[path]
@@ -23,32 +23,56 @@ def getTable(path, colorA, colorB, addProgress):
                 align='left'))
     ])
     
-    if addProgress is True:
-        numEntries.append(dataFrame.shape[0])
+    
 
-    return result
+    return [result, dataFrame.shape[0]]
 
 
-def normalizeVals():
+def normalizeVals(numEntries):
     maxVal = max(numEntries)
     for i in range (len(numEntries)):
         numEntries[i] = (numEntries[i]/maxVal)
-    
+    return numEntries
 
-stanTab = getTable('StanfordProjects', 'red', 'white', False)
-vTTab = getTable('VirginiaTechProjects', 'maroon', 'orange', False)
-techTab = getTable('Technology and Computer Science', 'green', 'white', True)
-bioTab = getTable('Biomedical', 'pink', 'white', True)
-otherTab = getTable('Other', 'grey', 'white', True)
-normalizeVals()
+@st.cache
+def loadData():
+    stanTab = getTable('StanfordProjects', 'red', 'white')
+    vTTab = getTable('VirginiaTechProjects', 'orange', 'white')
+    techTab = getTable('Technology and Computer Science', 'green', 'white')
+    bioTab = getTable('Biomedical', 'pink', 'white')
+    otherTab = getTable('Other', 'grey', 'white')
+    freqs = [techTab[1], bioTab[1], otherTab[1]]
+    freqs = normalizeVals(freqs)
+
+    return [stanTab[0], vTTab[0], techTab[0], bioTab[0], otherTab[0], freqs]
+
+dataVals = loadData()
 
 
 st.title('Covid-19 Research Opportunities')
+st.write("Below are research projects from different places which you could become a part of!")
+st.write("Simply look for a project and contact those associated with it to see if you can collaborate to the effort.")
 
-oppVals = {'Stanford': stanTab, 'Virginia Tech': vTTab, "Technology": techTab, "Biomedical": bioTab, "Other": otherTab}
+oppVals = {'Stanford': dataVals[0], 'Virginia Tech': dataVals[1], "Technology": dataVals[2], "Biomedical": dataVals[3], "Other": dataVals[4]}
 val = st.selectbox("Opportunity Choices", list(oppVals.keys()), 0)
 st.plotly_chart(oppVals[val])
 
-for i in range (len(numEntries)):
-    st.write(pairings[i]) 
-    st.progress(numEntries[i])
+
+for i in range(0, len(dataVals[5])):
+    st.write(pairings[i])
+    st.progress(dataVals[5][i])
+
+st.write("\n")
+
+st.write("We're always looking for feedback on how we can improve this tool! Please type in any feedback you have for us in the box down below! :) ")
+client =  MongoClient("mongodb+srv://covid19Scraper:Covid-19@coviddata-ouz9f.mongodb.net/test?retryWrites=true&w=majority")
+db = client['Covid19Data']
+collection = db['Feedback']
+feedback = st.text_area("Write here!")
+if feedback:
+    feedBackRaw = {'FeedbackVal': [feedback]}
+    dataFrame = pd.DataFrame(data=feedBackRaw)
+    dataFrame.reset_index(inplace=True)
+    data_dict = dataFrame.to_dict("records")
+    collection.insert_many(data_dict)
+    st.write("Great, we got your feedback!")

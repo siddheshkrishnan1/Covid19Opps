@@ -51,14 +51,19 @@ def stanford():
             catTables[keyPhrase][1].append("Stanford")
             catTables[keyPhrase][3].append(entryVals[2])
             
-            linkTxt = ""
+            linkTxt = []
             for relLinks in linkVals:
                 textVal = relLinks.text
                 if textVal in entryVals[1]:
-                    linkTxt = linkTxt + str(relLinks.get_attribute('href')) + "\n"
-                
-            links.append(linkTxt)
-            catTables[keyPhrase][2].append(linkTxt)
+                    linkTxt.append(str(relLinks.get_attribute('href'))+" ")
+            
+            linkTxt = list(set(linkTxt))
+            resVal = "\n".join(linkTxt)
+            resVal = " "+resVal
+            links.append(resVal)
+            catTables[keyPhrase][2].append(resVal)
+
+
 
             
 
@@ -73,7 +78,10 @@ def stanford():
 
     client =  MongoClient("mongodb+srv://covid19Scraper:Covid-19@coviddata-ouz9f.mongodb.net/test?retryWrites=true&w=majority")
     db = client['Covid19Data']
-    collection = db['StanfordProjects']
+    name = 'StanfordProjects'
+    collection = db[name]
+    collection.drop()
+    collection = db[name]
     df.reset_index(inplace=True)
     data_dict = df.to_dict("records")
     # Insert collection
@@ -188,7 +196,10 @@ def virginiaTech():
 
     client =  MongoClient("mongodb+srv://covid19Scraper:Covid-19@coviddata-ouz9f.mongodb.net/test?retryWrites=true&w=majority")
     db = client['Covid19Data']
-    collection = db['VirginiaTechProjects']
+    name = 'VirginiaTechProjects'
+    collection = db[name]
+    collection.drop()
+    collection = db[name]
     df.reset_index(inplace=True)
     data_dict = df.to_dict("records")
     # Insert collection
@@ -204,6 +215,8 @@ def turnCatstoFiles():
 
         client =  MongoClient("mongodb+srv://covid19Scraper:Covid-19@coviddata-ouz9f.mongodb.net/test?retryWrites=true&w=majority")
         db = client['Covid19Data']
+        collection = db[str(keys)]
+        collection.drop()
         collection = db[str(keys)]
         df.reset_index(inplace=True)
         data_dict = df.to_dict("records")

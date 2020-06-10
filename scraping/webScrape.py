@@ -1,9 +1,13 @@
 #Importing packages
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+
 import pandas as pd
 from rake_nltk import Rake
 import stringdist
 from pymongo import MongoClient
+
+
 
 
 
@@ -23,8 +27,9 @@ for keys in catTables:
         catTables[keys].append([])
 
 def stanford():
-
-    driver = webdriver.Chrome('/Users/siddh1/Documents/Covid19Program/chromedriver')
+    options = Options()
+    options.headless = True
+    driver = webdriver.Chrome('/Users/siddh1/Documents/Covid19Program/chromedriver', chrome_options=options)
     driver.get("https://med.stanford.edu/covid19/research.html")
 
     title = []
@@ -128,7 +133,9 @@ def getKeyWord(rankedPhrases):
 #--------------------------------------------------------------------------------------
 
 def virginiaTech():
-    driver = webdriver.Chrome('/Users/siddh1/Documents/Covid19Program/chromedriver')
+    options = Options()
+    options.headless = True
+    driver = webdriver.Chrome('/Users/siddh1/Documents/Covid19Program/chromedriver', chrome_options=options)
     driver.get("https://www.research.vt.edu/covid-19-updates-impacts/opportunities.html")
 
     title = []

@@ -1,7 +1,7 @@
 #Importing packages
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-
+import pdfplumber
 import pandas as pd
 from rake_nltk import Rake
 import stringdist
@@ -147,10 +147,11 @@ def virginiaTech():
     postsEven = driver.find_elements_by_class_name("rowTop.rowEven")
     linkValsEven = driver.find_elements_by_class_name("rowTop.rowEven [href]")
 
-
+    
     postsOdd = driver.find_elements_by_class_name("rowTop.rowOdd")
     linkValsOdd = driver.find_elements_by_class_name("rowTop.rowOdd [href]")
-    descs = driver.find_elements_by_class_name("vt-c-table-noPostProcess")[1:]
+    descs = driver.find_elements_by_class_name("vt-c-table-noPostProcess")
+    
     index = 0
 
     for i in postsEven:
@@ -212,6 +213,78 @@ def virginiaTech():
     # Insert collection
     collection.insert_many(data_dict)
     return df
+#--------------------------------------------------------------------------------------
+def utAustin():
+    pathToFile = "/Users/siddh1/Documents/Covid19Program/scraping/UT COVID-19 Researchers_active projs only_2020-05-19.pdf"
+    pdf = pdfplumber.open(pathToFile)
+    pages = pdf.pages[1:-1]
+    names = []
+    departments = []
+    description = []
+    contacts = []
+    keyWords = []
+
+    for page in pages:
+        pageVal = page.extract_text().split("\n")
+        if(len(pageVal)>1):
+            names.append(pageVal[0])
+            departments.append(pageVal[1])
+            contact = pageVal[-1]
+            descVal = "\n".join(pageVal[2:-1])
+            contact = contact.split(" ")
+            eduIn = False
+            poc = ""
+            for x in contact:
+                if ".edu" in x or ".com" in x:
+                    eduIn = True
+                    break
+            if eduIn == True:
+                poc = contact[0]
+                contacts.append(contact[0])
+                if (len(contact) > 1):
+                    contact = " ".join(contact[1:])
+                    descVal = descVal + contact
+            
+            if eduIn == False:
+                contact = pageVal[-2].split(" ")
+                poc = contact[0]
+                contacts.append(contact[0])
+                descVal = "\n".join(pageVal[2:-2])
+                if (len(contact) > 1):
+                    contact = " ".join(contact[1:])
+                    descVal = descVal + contact
+                descVal = descVal + (" ".join(pageVal[-1]))
+
+            description.append(descVal)
+            r.extract_keywords_from_text(descVal)
+            keyPhrase = getKeyWord(r.get_ranked_phrases())
+            keyWords.append(keyPhrase)
+            catTables[keyPhrase][0].append(pageVal[0])
+            catTables[keyPhrase][1].append("UT Austin")
+            linkVal = "No links but here is the point of contact: "+poc
+            catTables[keyPhrase][2].append(linkVal)
+            catTables[keyPhrase][3].append(descVal)
+
+    
+
+
+    df = pd.DataFrame(list(zip(names, departments, description, contacts, keyWords)), 
+                    columns =['Person Name', 'Department', 'Project Description', 'Point of Contact', 'Key Words']) 
+
+    df.to_csv('UTAustinProjects.csv', index = False)
+
+    client =  MongoClient("mongodb+srv://covid19Scraper:Covid-19@coviddata-ouz9f.mongodb.net/test?retryWrites=true&w=majority")
+    db = client['Covid19Data']
+    name = 'UTAustinProjects'
+    collection = db[name]
+    collection.drop()
+    collection = db[name]
+    df.reset_index(inplace=True)
+    data_dict = df.to_dict("records")
+    # Insert collection
+    collection.insert_many(data_dict)
+    return df
+    
 
 def turnCatstoFiles():
     for keys in catTables:
@@ -235,5 +308,7 @@ def turnCatstoFiles():
    
 stanford()
 virginiaTech()
+utAustin()
 turnCatstoFiles()
+utAustin()
 

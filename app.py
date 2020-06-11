@@ -37,14 +37,15 @@ def normalizeVals(numEntries):
 @st.cache
 def loadData():
     stanTab = getTable('StanfordProjects', 'red', 'white')
-    vTTab = getTable('VirginiaTechProjects', 'orange', 'white')
+    vTTab = getTable('VirginiaTechProjects', 'lavender', 'white')
+    utTab = getTable('UTAustinProjects', 'orange', 'white')
     techTab = getTable('Technology and Computer Science', 'green', 'white')
     bioTab = getTable('Biomedical', 'pink', 'white')
     otherTab = getTable('Other', 'grey', 'white')
     freqs = [techTab[1], bioTab[1], otherTab[1]]
     freqs = normalizeVals(freqs)
 
-    return [stanTab[0], vTTab[0], techTab[0], bioTab[0], otherTab[0], freqs]
+    return [utTab[0], stanTab[0], vTTab[0], techTab[0], bioTab[0], otherTab[0], freqs]
 
 dataVals = loadData()
 
@@ -53,14 +54,14 @@ st.title('Covid-19 Research Opportunities')
 st.write("Below are research projects from different places which you could become a part of!")
 st.write("Simply look for a project and contact those associated with it to see if you can collaborate to the effort.")
 
-oppVals = {'Stanford': dataVals[0], 'Virginia Tech': dataVals[1], "Technology": dataVals[2], "Biomedical": dataVals[3], "Other": dataVals[4]}
+oppVals = {'UT Austin': dataVals[0], 'Stanford': dataVals[1], 'Virginia Tech': dataVals[2], "Technology": dataVals[3], "Biomedical": dataVals[4], "Other": dataVals[5]}
 val = st.selectbox("Opportunity Choices", list(oppVals.keys()), 0)
 st.plotly_chart(oppVals[val])
 
 
-for i in range(0, len(dataVals[5])):
+for i in range(0, len(dataVals[6])):
     st.write(pairings[i])
-    st.progress(dataVals[5][i])
+    st.progress(dataVals[6][i])
 
 st.write("\n")
 

@@ -270,66 +270,94 @@ def virginiaTech():
     # Insert collection
     collection.insert_many(data_dict)
     return df
-#--------------------------------------------------------------------------------------
+
+#This method is to scrape UT Austin data
 def utAustin():
+
+    #Open up the PDF using pdf plumber
     pathToFile = "/Users/siddh1/Documents/Covid19Program/scraping/UT COVID-19 Researchers_active projs only_2020-05-19.pdf"
     pdf = pdfplumber.open(pathToFile)
+    #Get the relavant pages
     pages = pdf.pages[1:-1]
+
+    #Create relevant arrays (each array represents a column in our table)
     names = []
     departments = []
     description = []
     contacts = []
     keyWords = []
 
+    #Iterates through each page in the pdf
     for page in pages:
+        #Split the whole page by lines
         pageVal = page.extract_text().split("\n")
+        #If all of the content is present
         if(len(pageVal)>1):
+            #Append the name value to names
             names.append(pageVal[0])
+            #Append the department value to departments
             departments.append(pageVal[1])
+            #Append the contact value to contacts
             contact = pageVal[-1]
+            #Split the description by lines
             descVal = "\n".join(pageVal[2:-1])
+            #Split the contact by lines
             contact = contact.split(" ")
             eduIn = False
+            #Point of contact
             poc = ""
+            #Loop through the contacts and if it was found, we set eduIn to true
             for x in contact:
                 if ".edu" in x or ".com" in x:
                     eduIn = True
                     break
+            #If the contact was found we isolate it and set it 
             if eduIn == True:
                 poc = contact[0]
                 contacts.append(contact[0])
+                #Then we append the remaining value to the description
                 if (len(contact) > 1):
                     contact = " ".join(contact[1:])
                     descVal = descVal + contact
-            
+            #If the contact was not found, we move to the previous element to find the contact
             if eduIn == False:
+                #we isolate it and set it
                 contact = pageVal[-2].split(" ")
                 poc = contact[0]
                 contacts.append(contact[0])
                 descVal = "\n".join(pageVal[2:-2])
+                #Then we append the remaining value to the description
                 if (len(contact) > 1):
                     contact = " ".join(contact[1:])
                     descVal = descVal + contact
                 descVal = descVal + (" ".join(pageVal[-1]))
 
+            #Append the description to descriptions
             description.append(descVal)
+            #Extract all of the key words from the description 
             r.extract_keywords_from_text(descVal)
+            #Store the best matching category for that value and eventually append it to the key words list
             keyPhrase = getKeyWord(r.get_ranked_phrases())
             keyWords.append(keyPhrase)
+            #Append the title to the specific table which cooresponds to this entries category (tech, bio etc)
             catTables[keyPhrase][0].append(pageVal[0])
+             #Append the original source, which in this case will be UT Austin
             catTables[keyPhrase][1].append("UT Austin")
+            #Append the point of contact
             linkVal = "No links but here is the point of contact: "+poc
             catTables[keyPhrase][2].append(linkVal)
+            #Append the description
             catTables[keyPhrase][3].append(descVal)
 
     
 
-
+    #Turn the table to a csv and save it
     df = pd.DataFrame(list(zip(names, departments, description, contacts, keyWords)), 
                     columns =['Person Name', 'Department', 'Project Description', 'Point of Contact', 'Key Words']) 
 
     df.to_csv('UTAustinProjects.csv', index = False)
 
+    #Read from mongoDB and place the table into mongodb
     client =  MongoClient("mongodb+srv://covid19Scraper:Covid-19@coviddata-ouz9f.mongodb.net/test?retryWrites=true&w=majority")
     db = client['Covid19Data']
     name = 'UTAustinProjects'
@@ -344,12 +372,16 @@ def utAustin():
     
 #This method turn the category tables into their own seperate files
 def turnCatstoFiles():
+    #Iterate through all of the categories 
     for keys in catTables:
+        #Create a file name for them
         fileName = str(keys)+".csv"
+        #Turn the table to a csv and save it
         df = pd.DataFrame(list(zip(catTables[keys][0], catTables[keys][1], catTables[keys][2], catTables[keys][3])), 
                     columns =['Project Title', 'Source', 'Relevant Links', 'Project Description']) 
         df.to_csv(fileName, index = False)
 
+        #Read from mongoDB and place the table into mongodb
         client =  MongoClient("mongodb+srv://covid19Scraper:Covid-19@coviddata-ouz9f.mongodb.net/test?retryWrites=true&w=majority")
         db = client['Covid19Data']
         collection = db[str(keys)]
@@ -359,7 +391,6 @@ def turnCatstoFiles():
         data_dict = df.to_dict("records")
         # Insert collection
         collection.insert_many(data_dict)
-
 
 
 #All method calls (scrape each source and in the end generate the csv's for all the categories)

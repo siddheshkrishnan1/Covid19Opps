@@ -9,7 +9,7 @@ pairings = ["Technology Projects: ", "Biomedical Projects", "Other Projects"]
 #This method gets a table based on the associated name
 def getTable(path, colorA, colorB):
     #Read in dataframe from mongodb
-    client =  MongoClient("mongodb+srv://covid19Scraper:Covid-19@coviddata-ouz9f.mongodb.net/test?retryWrites=true&w=majority")
+    client =  MongoClient("mongodb+srv://covid19Scraper:Covid-19@cluster0-rvjf8.mongodb.net/Covid19Data?retryWrites=true&w=majority")
     db = client.Covid19Data
     collection = db[path]
     dataFrame = pd.DataFrame(list(collection.find()))
@@ -79,7 +79,7 @@ st.write("\n")
 #Feedback text
 st.write("We're always looking for feedback on how we can improve this tool! Please type in any feedback you have for us in the box down below! :) ")
 #Initializing the mongodb client
-client =  MongoClient("mongodb+srv://covid19Scraper:Covid-19@coviddata-ouz9f.mongodb.net/test?retryWrites=true&w=majority")
+client =  MongoClient("mongodb+srv://covid19Scraper:Covid-19@cluster0-rvjf8.mongodb.net/Covid19Data?retryWrites=true&w=majority")
 db = client['Covid19Data']
 collection = db['Feedback']
 #Creating an input area

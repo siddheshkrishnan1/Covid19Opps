@@ -102,7 +102,7 @@ def stanford():
     df.to_csv('StanfordProjects.csv', index = False)
 
     #Read from mongoDB and place the table into mongodb
-    client =  MongoClient("mongodb+srv://covid19Scraper:Covid-19@coviddata-ouz9f.mongodb.net/test?retryWrites=true&w=majority")
+    client =  MongoClient("mongodb+srv://covid19Scraper:Covid-19@cluster0-rvjf8.mongodb.net/Covid19Data?retryWrites=true&w=majority")
     db = client['Covid19Data']
     name = 'StanfordProjects'
     collection = db[name]
@@ -259,7 +259,7 @@ def virginiaTech():
     df.to_csv('VirginiaTechProjects.csv', index = False)
 
     #Read from mongoDB and place the table into mongodb
-    client =  MongoClient("mongodb+srv://covid19Scraper:Covid-19@coviddata-ouz9f.mongodb.net/test?retryWrites=true&w=majority")
+    client =  MongoClient("mongodb+srv://covid19Scraper:Covid-19@cluster0-rvjf8.mongodb.net/Covid19Data?retryWrites=true&w=majority")
     db = client['Covid19Data']
     name = 'VirginiaTechProjects'
     collection = db[name]
@@ -358,7 +358,7 @@ def utAustin():
     df.to_csv('UTAustinProjects.csv', index = False)
 
     #Read from mongoDB and place the table into mongodb
-    client =  MongoClient("mongodb+srv://covid19Scraper:Covid-19@coviddata-ouz9f.mongodb.net/test?retryWrites=true&w=majority")
+    client =  MongoClient("mongodb+srv://covid19Scraper:Covid-19@cluster0-rvjf8.mongodb.net/Covid19Data?retryWrites=true&w=majority")
     db = client['Covid19Data']
     name = 'UTAustinProjects'
     collection = db[name]
@@ -382,7 +382,7 @@ def turnCatstoFiles():
         df.to_csv(fileName, index = False)
 
         #Read from mongoDB and place the table into mongodb
-        client =  MongoClient("mongodb+srv://covid19Scraper:Covid-19@coviddata-ouz9f.mongodb.net/test?retryWrites=true&w=majority")
+        client =  MongoClient("mongodb+srv://covid19Scraper:Covid-19@cluster0-rvjf8.mongodb.net/Covid19Data?retryWrites=true&w=majority")
         db = client['Covid19Data']
         collection = db[str(keys)]
         collection.drop()

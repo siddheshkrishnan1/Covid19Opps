@@ -285,6 +285,17 @@ def utAustin():
     collection.insert_many(data_dict)
     return df
     
+#--------------------------------------------------------------------------------------
+
+def princeton():
+    print()
+
+#--------------------------------------------------------------------------------------
+
+def ucSanDiego():
+    print()
+
+#--------------------------------------------------------------------------------------
 
 def turnCatstoFiles():
     for keys in catTables:
@@ -310,5 +321,4 @@ stanford()
 virginiaTech()
 utAustin()
 turnCatstoFiles()
-utAustin()
 

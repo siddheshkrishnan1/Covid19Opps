@@ -369,7 +369,28 @@ def utAustin():
     # Insert collection
     collection.insert_many(data_dict)
     return df
-    
+
+
+
+
+#--------------------------------------------------------------------------------------
+
+def princeton():
+    print()
+
+#--------------------------------------------------------------------------------------
+
+def ucSanDiego():
+    print()
+
+#--------------------------------------------------------------------------------------
+
+
+
+
+
+
+
 #This method turn the category tables into their own seperate files
 def turnCatstoFiles():
     #Iterate through all of the categories 

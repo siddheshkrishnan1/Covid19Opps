@@ -376,12 +376,45 @@ def utAustin():
 #--------------------------------------------------------------------------------------
 
 def princeton():
-    print()
+    # Scraping done in a Jupyter Notebook
+
+    # Read CSV as DF
+    df = pd.read_csv('PrincetonProjects', index=False)
+
+    #Read from mongoDB and place the table into mongodb
+    client =  MongoClient("mongodb+srv://covid19Scraper:Covid-19@cluster0-rvjf8.mongodb.net/Covid19Data?retryWrites=true&w=majority")
+    db = client['Covid19Data']
+    name = 'PrincetonProjects'
+    collection = db[name]
+    collection.drop()
+    collection = db[name]
+    df.reset_index(inplace=True)
+    data_dict = df.to_dict("records")
+    # Insert collection
+    collection.insert_many(data_dict)
+    return df
+
 
 #--------------------------------------------------------------------------------------
 
 def ucSanDiego():
-    print()
+    # Scraping done in a Jupyter Notebook
+
+    # Read CSV as DF
+    df = pd.read_csv('UCSDSOM', index=False)
+
+    #Read from mongoDB and place the table into mongodb
+    client =  MongoClient("mongodb+srv://covid19Scraper:Covid-19@cluster0-rvjf8.mongodb.net/Covid19Data?retryWrites=true&w=majority")
+    db = client['Covid19Data']
+    name = 'UCSanDiegoProjects'
+    collection = db[name]
+    collection.drop()
+    collection = db[name]
+    df.reset_index(inplace=True)
+    data_dict = df.to_dict("records")
+    # Insert collection
+    collection.insert_many(data_dict)
+    return df
 
 #--------------------------------------------------------------------------------------
 

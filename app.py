@@ -44,6 +44,8 @@ def loadData():
     stanTab = getTable('StanfordProjects', 'red', 'white')
     vTTab = getTable('VirginiaTechProjects', 'lavender', 'white')
     utTab = getTable('UTAustinProjects', 'orange', 'white')
+    princeTab = getTable('PrincetonProjects', 'orange', 'black')
+    ucsdTab = getTable('UCSDSOM', 'blue', 'yellow')
     techTab = getTable('Technology and Computer Science', 'green', 'white')
     bioTab = getTable('Biomedical', 'pink', 'white')
     otherTab = getTable('Other', 'grey', 'white')
@@ -52,7 +54,7 @@ def loadData():
     freqs = normalizeVals(freqs)
 
     #Return all of the tables as well as the frequencies
-    return [utTab[0], stanTab[0], vTTab[0], techTab[0], bioTab[0], otherTab[0], freqs]
+    return [utTab[0], stanTab[0], vTTab[0], princeTab[0], ucsdTab[0], techTab[0], bioTab[0], otherTab[0], freqs]
 
 #Loading the data
 dataVals = loadData()
@@ -63,7 +65,7 @@ st.write("Below are research projects from different places which you could beco
 st.write("Simply look for a project and contact those associated with it to see if you can collaborate to the effort.")
 
 #Creating a drop-down menu for each of the sources
-oppVals = {'UT Austin': dataVals[0], 'Stanford': dataVals[1], 'Virginia Tech': dataVals[2], "Technology": dataVals[3], "Biomedical": dataVals[4], "Other": dataVals[5]}
+oppVals = {'UT Austin': dataVals[0], 'Stanford': dataVals[1], 'Virginia Tech': dataVals[2], 'Princeton': dataVals[3], 'UC San Diego': dataVals[4] "Technology": dataVals[5], "Biomedical": dataVals[6], "Other": dataVals[7]}
 val = st.selectbox("Opportunity Choices", list(oppVals.keys()), 0)
 #Plot the appropriate/selected chart
 st.plotly_chart(oppVals[val])

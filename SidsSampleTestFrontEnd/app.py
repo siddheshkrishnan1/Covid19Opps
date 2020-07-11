@@ -1,9 +1,18 @@
 from flask import Flask
-app = Flask(__name__)
+from dash import Dash
+import dash_core_components as dcc
+import dash_html_components as html
 
-@app.route("/")
-def hello():
-    return "Hello World!"
 
-if __name__ == "__main__":
-    app.run()
+server = Flask(__name__)
+app = dash.Dash(
+    __name__,
+    server=server,
+    url_base_pathname='/first-app'
+)
+
+app.layout = html.Div(id='dash-container')
+
+@server.route("/first-app")
+def my_app():
+    return app.index()

@@ -1,6 +1,8 @@
 #Importing packages
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from webdriver_manager.chrome import ChromeDriverManager
+
 import pdfplumber
 import pandas as pd
 from rake_nltk import Rake
@@ -39,7 +41,7 @@ def stanford():
     #Create a "headless (not opening chrome directly) selenium object"
     options = Options()
     options.headless = True
-    driver = webdriver.Chrome('/Users/siddh1/Documents/Covid19Program/chromedriver', chrome_options=options)
+    driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)
     driver.get("https://med.stanford.edu/covid19/research.html")
 
     #Create relevant arrays (each array represents a column in our table)
@@ -189,7 +191,7 @@ def virginiaTech():
     #Create a "headless (not opening chrome directly) selenium object"
     options = Options()
     options.headless = True
-    driver = webdriver.Chrome('/Users/siddh1/Documents/Covid19Program/chromedriver', chrome_options=options)
+    driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)
     driver.get("https://www.research.vt.edu/covid-19-updates-impacts/opportunities.html")
 
     #Create relevant arrays (each array represents a column in our table)
@@ -318,7 +320,7 @@ def virginiaTech():
 def utAustin():
 
     #Open up the PDF using pdf plumber
-    pathToFile = "/Users/siddh1/Documents/Covid19Program/scraping/UT COVID-19 Researchers_active projs only_2020-05-19.pdf"
+    pathToFile = "/Users/siddh1/Documents/Covid19Opps/scraping/UT COVID-19 Researchers_active projs only_2020-05-19.pdf"
     pdf = pdfplumber.open(pathToFile)
     #Get the relavant pages
     pages = pdf.pages[1:-1]
@@ -506,14 +508,33 @@ def turnCatstoFiles():
         collection.insert_many(data_dict)
 
 def writeLargeToDatabase():
-    
+
+
+
+    df = pd.DataFrame(list(zip(dataSrc, titleOrCoord, typeOrDep, descrip, linksOrPOC, resultKeyWords)), 
+                    columns =['Data Source', 'Project Title/ Coordinator', 'Type of Research', 'Description' ,'Relevant Links/POC', 'Key Words']) 
+    df.to_csv('BigDataSheet.csv', index = False)
+
+    #Read from mongoDB and place the table into mongodb
+    client =  MongoClient("mongodb+srv://covid19Scraper:Covid-19@cluster0-rvjf8.mongodb.net/FlaskTable?retryWrites=true&w=majority")
+    db = client['FlaskTable']
+    name = 'AllDataVals'
+    collection = db[name]
+    collection.drop()
+    collection = db[name]
+    df.reset_index(inplace=True)
+    data_dict = df.to_dict("records")
+    # Insert collection
+    collection.insert_many(data_dict)
 
 
 #All method calls (scrape each source and in the end generate the csv's for all the categories)
+
 stanford()
 virginiaTech()
 utAustin()
 turnCatstoFiles()
+writeLargeToDatabase()
 
 
 #Fin

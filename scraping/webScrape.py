@@ -93,6 +93,7 @@ def stanford():
             
             #Format the links (turn it into a set for no duplicates)
             linkTxt = list(set(linkTxt))
+            linkTxt = [s for s in linkTxt if "stanford" in s]
             #Split by lines for easy readability
             resVal = "\n".join(linkTxt)
             resVal = " "+resVal
